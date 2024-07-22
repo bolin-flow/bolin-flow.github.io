@@ -4,35 +4,49 @@
   
     
       <url>
-            <loc>http://localhost:57979/</loc>
+            <loc>http://localhost:1313/</loc>
             <lastmod>2024-07-15T22:47:53-04:00</lastmod>
           </url>
     
   
     
       <url>
-            <loc>http://localhost:57979/exploring/</loc>
+            <loc>http://localhost:1313/exploring/</loc>
             <lastmod>2024-07-15T00:00:00+00:00</lastmod>
           </url>
     
   
     
       <url>
-            <loc>http://localhost:57979/developing/</loc>
+            <loc>http://localhost:1313/developing/</loc>
             <lastmod>2024-07-14T19:16:56-04:00</lastmod>
           </url>
     
   
     
       <url>
-            <loc>http://localhost:57979/developing/another-post/</loc>
+            <loc>http://localhost:1313/developing/another-post/</loc>
             <lastmod>2024-07-14T19:16:56-04:00</lastmod>
           </url>
     
   
     
       <url>
-            <loc>http://localhost:57979/about/</loc>
+            <loc>http://localhost:1313/developing/first-post/</loc>
+            <lastmod>2024-07-14T19:16:07-04:00</lastmod>
+          </url>
+    
+  
+    
+      <url>
+            <loc>http://localhost:1313/developing/my-post/</loc>
+            <lastmod>2024-07-14T19:15:07-04:00</lastmod>
+          </url>
+    
+  
+    
+      <url>
+            <loc>http://localhost:1313/about/</loc>
           </url>
     
   

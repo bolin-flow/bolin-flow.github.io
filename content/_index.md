@@ -5,10 +5,10 @@ draft = false
 +++
 
 
-#### Open source, machine learning and interesting ideas…
+#### Open source, machine learning, creative coding and ideas…
 
 
-{{< figure src="test_imgae.svg" class="m-auto mt-6 max-w-prose" >}}
+<!-- {{< figure src="test_imgae.svg" class="m-auto mt-6 max-w-prose" >}} -->
 
 
 [Hugo: how to add some videos](https://github.com/martignoni/hugo-video)

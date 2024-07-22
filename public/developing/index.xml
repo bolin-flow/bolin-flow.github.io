@@ -2,19 +2,33 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Gulu :paw_prints: Gulu</title>
-    <link>http://localhost:57979/developing/</link>
+    <link>http://localhost:1313/developing/</link>
     <description>Recent content on Gulu :paw_prints: Gulu</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>@copyright 2024 Bolin</copyright>
     <lastBuildDate>Sun, 14 Jul 2024 19:16:56 -0400</lastBuildDate>
-    <atom:link href="http://localhost:57979/developing/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/developing/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Another Post</title>
-      <link>http://localhost:57979/developing/another-post/</link>
+      <link>http://localhost:1313/developing/another-post/</link>
       <pubDate>Sun, 14 Jul 2024 19:16:56 -0400</pubDate>
-      <guid>http://localhost:57979/developing/another-post/</guid>
+      <guid>http://localhost:1313/developing/another-post/</guid>
       <description>Another post # Hugo Documentation</description>
+    </item>
+    <item>
+      <title>First Post</title>
+      <link>http://localhost:1313/developing/first-post/</link>
+      <pubDate>Sun, 14 Jul 2024 19:16:07 -0400</pubDate>
+      <guid>http://localhost:1313/developing/first-post/</guid>
+      <description>This is the first post # {{ $image := .</description>
+    </item>
+    <item>
+      <title>My Post</title>
+      <link>http://localhost:1313/developing/my-post/</link>
+      <pubDate>Sun, 14 Jul 2024 19:15:07 -0400</pubDate>
+      <guid>http://localhost:1313/developing/my-post/</guid>
+      <description></description>
     </item>
   </channel>
 </rss>
