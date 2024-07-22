@@ -3,7 +3,7 @@
 # https://jpanther.github.io/congo/docs/getting-started/
 
 theme = ["hugo-video", "congo"]
-baseURL = "https://your_domain.com/"
+baseURL = "https://bolin-flow.github.io/"
 defaultContentLanguage = "en"
 
 enableRobotsTXT = true

@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Gulu :paw_prints: Gulu</title>
-    <link>https://your_domain.com/tags/</link>
+    <link>http://localhost:57979/tags/</link>
     <description>Recent content in Tags on Gulu :paw_prints: Gulu</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>@copyright 2024 Bolin</copyright>
-    <atom:link href="https://your_domain.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:57979/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
