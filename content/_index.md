@@ -4,7 +4,7 @@ date = 2024-07-15T22:47:53-04:00
 draft = false
 +++
 
-<!-- {{< highlight >}} **Open source, machine learning, creative coding and ideas…**{{< /highlight >}} -->
+<!-- {{< alert >}} **Open source, machine learning, creative coding and ideas…**{{< /alert >}} -->
 <div style="height: 50px;"></div>
 
 **Open source, machine learning, creative coding and ideas…**
