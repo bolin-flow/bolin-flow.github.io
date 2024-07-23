@@ -21,19 +21,9 @@
   weight = 10
 
 [[main]]
-  name = "Experience"
-  url = "https://libolin.notion.site/Bolin-Li-977016c19b23455e9ab64c877f9a2bb1?pvs=4"
-  weight = 20
-
-[[main]]
-  name = "Tags"
-  pageRef = "tags"
-  weight = 30
-
-[[main]]
   name = "GitHub"
   url = "https://github.com/bolin0812"
-  weight = 40
+  weight = 30
   [main.params]
     icon = "github"
     showName = false
@@ -45,11 +35,11 @@
   [main.params]
     action = "search"
 
-[[main]]
-  identifier = "locale"
-  weight = 100
-  [main.params]
-    action = "locale"
+#[[main]]
+#  identifier = "locale"
+#  weight = 100
+#  [main.params]
+#    action = "locale"
 
 # -- Footer Menu --
 # The footer menu is displayed at the bottom of the page, just before
@@ -59,3 +49,25 @@
    name = "Tags"
    pageRef = "tags"
    weight = 10
+  [footer.params]
+    icon = "list"
+    showName = false
+    target = "_blank"
+
+[[footer]]
+  name = "instagram"
+  url = "https://www.instagram.com/li_bo_lin/"
+  weight = 20
+  [footer.params]
+    icon = "instagram"
+    showName = false
+    target = "_blank"
+
+[[footer]]
+  #name = "Resume"
+  #url = "https://libolin.notion.site/Bolin-Li-977016c19b23455e9ab64c877f9a2bb1?pvs=4"
+  #weight = 11
+  #[footer.params]
+  #  icon = "edit"
+  #  showName = false
+  #  target = "_blank"
