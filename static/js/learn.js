@@ -4,8 +4,6 @@ let particles = [];
 let myColor;
 
 function setup() {
-  // createCanvas(700, 470);
-  // canvas.parent('visual-holder');//make it an object
   let canvas = createCanvas(windowWidth, windowHeight);
   canvas.position(0, 0);
   canvas.style('z-index', '-1');
@@ -111,7 +109,8 @@ class Particle {
 
   constructor() {
     this.pos = createVector(random(width), random(height));
-    this.speed = createVector(random(-Particle.SPEED_MAX, Particle.SPEED_MAX), random(-Particle.SPEED_MAX, Particle.SPEED_MAX));
+    this.speed = createVector(random(-Particle.SPEED_MAX, Particle.SPEED_MAX), 
+    random(-Particle.SPEED_MAX, Particle.SPEED_MAX));
     this.neighbors = [];
   }
 

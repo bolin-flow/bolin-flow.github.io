@@ -21,6 +21,11 @@
   weight = 10
 
 [[main]]
+  name = "Experience"
+  url = "https://libolin.notion.site/Bolin-Li-977016c19b23455e9ab64c877f9a2bb1?pvs=4"
+  weight = 20
+
+[[main]]
   name = "Tags"
   pageRef = "tags"
   weight = 30
