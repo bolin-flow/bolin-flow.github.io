@@ -1,13 +1,7 @@
 +++
-title = 'Interactive Plot with Cloudy Shapes'
-date = 2024-07-15
+title = 'Explore '
 draft = false
 +++
-
-
-
-### Interactive p5.js Plot with Cloudy Shapes
-
 
 #### Some clever text
 

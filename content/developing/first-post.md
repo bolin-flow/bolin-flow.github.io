@@ -2,6 +2,8 @@
 title = 'First Post'
 date = 2024-07-14T19:16:07-04:00
 draft = false
+tags = ['draft','test']
+
 +++
 
 # This is the first post

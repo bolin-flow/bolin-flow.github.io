@@ -20,14 +20,22 @@
   pageRef = "developing"
   weight = 10
 
+#[[main]]
+#  name = "GitHub"
+#  url = "https://github.com/bolin0812"
+#  weight = 30
+#  [main.params]
+#    icon = "github"
+#    showName = false
+#    target = "_blank"
+
 [[main]]
-  name = "GitHub"
-  url = "https://github.com/bolin0812"
-  weight = 30
+   name = "Tage"
+   pageRef = "tags"
+   weight = 20
   [main.params]
-    icon = "github"
+    icon = "list"
     showName = false
-    target = "_blank"
 
 [[main]]
   identifier = "search"
@@ -63,7 +71,7 @@
     showName = false
     target = "_blank"
 
-[[footer]]
+# [[footer]]
   #name = "Resume"
   #url = "https://libolin.notion.site/Bolin-Li-977016c19b23455e9ab64c877f9a2bb1?pvs=4"
   #weight = 11

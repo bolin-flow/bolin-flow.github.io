@@ -20,7 +20,8 @@ copyright = "@copyright 2024 Bolin"
   links = [
       { linkedin = "https://linkedin.com/in/bolinli" },
       { github = "https://github.com/bolin0812" },
-      { email = "https://libolin11203203@gmail.com" }
+      { email = "mailto:libolin11203203@gmail.com" },
+      { telegram = "https://t.me/bolin_li" }
   ]
   #   { link = "https://link-to-some-website.com/" },
   #   { amazon = "https://www.amazon.com/hz/wishlist/ls/wishlist-id" },
