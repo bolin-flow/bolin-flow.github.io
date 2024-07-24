@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>About on Gulu :paw_prints: Gulu</title>
+    <title>Welcome to my page! on Gulu :paw_prints: Gulu</title>
     <link>http://localhost:1313/about/</link>
-    <description>Recent content in About on Gulu :paw_prints: Gulu</description>
+    <description>Recent content in Welcome to my page! on Gulu :paw_prints: Gulu</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>@copyright 2024 Bolin</copyright>
     <lastBuildDate>Tue, 25 Jan 2022 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/about/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Resume</title>
-      <link>http://localhost:1313/about/resume/</link>
+      <title>Useful Links</title>
+      <link>http://localhost:1313/about/useful_links/</link>
       <pubDate>Tue, 25 Jan 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/resume/</guid>
+      <guid>http://localhost:1313/about/useful_links/</guid>
       <description>Personal detailed resume link.</description>
     </item>
   </channel>

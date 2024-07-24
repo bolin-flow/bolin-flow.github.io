@@ -1,5 +1,5 @@
 +++
-title = 'About'
+title = 'Welcome to my page!'
 date = 2024-07-23T11:11:11-04:00
 description= "This is a demo of adding content to the about page."
 draft = false
@@ -11,10 +11,11 @@ showBreadcrumbs= true
 showHeadingAnchors = true
 +++
 
-<!-- {{< alert >}} **Open source, machine learning, creative coding and ideas…**{{< /alert >}} -->
-<div style="height: 50px;"></div>
 
-**Open source, machine learning, creative coding and ideas…**
+
+I work as a Principal Data Scientist at Zinnia. 
+
+My research revolves around the fascinating field of Precision Medicine, where I harness the synergies of Network Science and Machine Learning to drive transformative advancements.
 
 
 ## head 2 
@@ -29,6 +30,3 @@ showHeadingAnchors = true
 <script src="/js/learn.js"></script>
 
 
-[Congo layout configuration parameters](https://jpanther.github.io/congo/docs/configuration/)
-
-[Detailed resume updated on 2023 Sep](https://libolin.notion.site/Bolin-Li-977016c19b23455e9ab64c877f9a2bb1?pvs=4)
