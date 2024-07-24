@@ -41,7 +41,7 @@ fingerprintAlgorithm = "sha256"
   showBreadcrumbs = false
   showDraftLabel = true
   showEdit = false
-  # editURL = "https://github.com/username/repo/"
+  editURL = "https://github.com/bolin-flow/bolin-flow.github.io"
   editAppendPath = true
   showHeadingAnchors = true
   showPagination = true
@@ -58,7 +58,7 @@ fingerprintAlgorithm = "sha256"
   showSummary = false
   showTableOfContents = false
   showTaxonomies = true
-  groupByYear = true
+  groupByYear = false
   paginationWidth = 1
 
 [sitemap]

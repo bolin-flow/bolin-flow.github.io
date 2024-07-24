@@ -31,11 +31,11 @@
       <description>This is the first post # {{ $image := .</description>
     </item>
     <item>
-      <title></title>
-      <link>http://localhost:1313/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/</guid>
-      <description></description>
+      <title>Resume</title>
+      <link>http://localhost:1313/about/resume/</link>
+      <pubDate>Tue, 25 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/resume/</guid>
+      <description>Personal detailed resume link.</description>
     </item>
   </channel>
 </rss>
