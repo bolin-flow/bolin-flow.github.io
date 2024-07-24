@@ -52,8 +52,9 @@ function draw() {
 
 function drawTriangles() {
   noStroke();
-  fill(myColor.R, myColor.G, myColor.B, 13);
-  stroke(max(myColor.R - 15, 0), max(myColor.G - 15, 0), max(myColor.B - 15, 0), 13);
+  // modify transparencies in fill and stroke from 13 to [3,6]
+  fill(myColor.R, myColor.G, myColor.B, 6);
+  stroke(max(myColor.R - 15, 0), max(myColor.G - 15, 0), max(myColor.B - 15, 0), 4);
   beginShape(TRIANGLES);
   for (let t of triangles) {
     t.display();
@@ -104,8 +105,8 @@ class MyColor {
 class Particle {
   static RAD = 4;
   static BOUNCE = -1;
-  static SPEED_MAX = 2.2;
-  static DIST_MAX = 50;
+  static SPEED_MAX = 1.8;
+  static DIST_MAX = 60;// smaller the dist_max value, smaller shapes
 
   constructor() {
     this.pos = createVector(random(width), random(height));
