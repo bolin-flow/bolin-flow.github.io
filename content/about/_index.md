@@ -15,7 +15,7 @@ showHeadingAnchors = true
 
 I work as a Principal Data Scientist at Zinnia. 
 
-My research revolves around the fascinating field of Precision Medicine, where I harness the synergies of Network Science and Machine Learning to drive transformative advancements.
+My projects revolves around the field of finance, operation management, credit risk, monitoring systems, supply chain, where I harness the synergies of Statistics and Machine Learning to drive transformative advancements.
 
 
 ## head 2 

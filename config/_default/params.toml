@@ -32,7 +32,7 @@ fingerprintAlgorithm = "sha256"
 [homepage]
   layout = "profile" # valid options: page, profile, custom
   showRecent = true
-  recentLimit = 5
+  recentLimit = 10
 
 [article]
   showDate = true
@@ -41,7 +41,7 @@ fingerprintAlgorithm = "sha256"
   showBreadcrumbs = false
   showDraftLabel = true
   showEdit = false
-  editURL = "https://github.com/bolin-flow/bolin-flow.github.io"
+  editURL = "https://github.com/bolin-flow/bolin-flow.github.io/content/"
   editAppendPath = true
   showHeadingAnchors = true
   showPagination = true

@@ -72,16 +72,25 @@
   [footer.params]
     icon = "list"
     showName = false
-    target = "_blank"
+    # target = "_blank"
 
 [[footer]]
-  name = "instagram"
-  url = "https://www.instagram.com/li_bo_lin/"
-  weight = 20
+   name = "useful_links"
+   pageRef = "about/useful_links"
+   weight = 20
   [footer.params]
-    icon = "instagram"
+    icon = "link"
     showName = false
-    target = "_blank"
+    # target = "_blank"
+
+#[[footer]]
+# name = "instagram"
+#  url = "https://www.instagram.com/li_bo_lin/"
+#  weight = 20
+#  [footer.params]
+#    icon = "instagram"
+#    showName = false
+#    target = "_blank"
 
 # [[footer]]
   #name = "Resume"
@@ -91,3 +100,4 @@
   #  icon = "edit"
   #  showName = false
   #  target = "_blank"
+
