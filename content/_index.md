@@ -7,8 +7,9 @@ draft = false
 <!-- {{< alert >}} **Open source, machine learning, creative coding and ideas…**{{< /alert >}} -->
 <div style="height: 80px;"></div>
 
-**Open source, machine learning, creative coding, and sharing ideas…**
-
+<div style="background-color: rgba(128, 128, 128, 0.12); padding: 3px; border-radius: 10px; font-weight: bold; box-shadow: 0 4px 8px rgba(0,0,0,0.11);">
+Open source, machine learning, creative coding, and sharing ideas…
+</div>
 <div style="height: 180px;"></div>
 
 <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>

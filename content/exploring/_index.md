@@ -1,9 +1,10 @@
 +++
-title = 'Explore '
+title = 'Exploring'
 draft = false
 +++
+<div style="height: 5px;"></div>
 
-#### Some clever text
+--- 
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
