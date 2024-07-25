@@ -1,5 +1,5 @@
 +++
-title = 'Welcome to my page!'
+title = '👋 Welcome to my page!'
 date = 2024-07-23T11:11:11-04:00
 description= "This is a demo of adding content to the about page."
 draft = false
@@ -10,7 +10,6 @@ showTableOfContents= true
 showBreadcrumbs= true
 showHeadingAnchors = true
 +++
-
 
 
 I work as a Principal Data Scientist at Zinnia. 
