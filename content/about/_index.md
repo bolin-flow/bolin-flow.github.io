@@ -10,20 +10,9 @@ showTableOfContents= true
 showBreadcrumbs= true
 showHeadingAnchors = true
 +++
+<div style="height: 30px;"></div>
 
-
-My name is Bolin. I’m passionate about building statistical solutions and machine learning models for diverse audiences,
-
-
-
-
-## head 2 
-
-### head 3
-
-#### head 4
-
-<div style="height: 160px;"></div>
+My name is Bolin. I'm documenting my learning notes on this website. I have a passion for building statistical solutions, machine learning models, and computer visualizations. Feel free to connect—I’m always excited to explore new perspectives and learn from each other.
 
 <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
 <script src="/js/learn3.js"></script>
