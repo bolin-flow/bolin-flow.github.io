@@ -10,7 +10,7 @@ showTableOfContents= true
 showBreadcrumbs= true
 showHeadingAnchors = true
 +++
-<div style="height: 5px;"></div>
+<div style="height: 0.01px;"></div>
 
 --- 
 
