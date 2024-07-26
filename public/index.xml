@@ -31,7 +31,7 @@
       <description>This is the first post # {{ $image := .</description>
     </item>
     <item>
-      <title>Useful Links</title>
+      <title>📎 Useful Links</title>
       <link>http://localhost:1313/about/useful_links/</link>
       <pubDate>Tue, 25 Jan 2022 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/about/useful_links/</guid>
