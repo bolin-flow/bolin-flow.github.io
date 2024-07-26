@@ -23,6 +23,7 @@ showAuthor = true
 ## Lilian Weng blogs and notes
 [Lilian Weng's blogs, documentations and learning notes](https://lilianweng.github.io/)
 
+[Emoji Search](https://www.emojisearch.app/)
 
 ## Katerina Limpitsouni and unDraw
 [Katerina Limpitsouni](https://ninalimpi.com/) 
