@@ -1,10 +1,13 @@
 +++
-title = 'Simple interactive visual effects'
+title = 'Steps to Integrate Interactive Visuals into Hugo Websites'
 date = 2024-07-22T12:16:56-04:00
 draft = false
 tags = ['Generative Art', 'Creative Coding']
 
 +++
+
+There are main x steps to integrate intergrate visualizations to Hugo website. This website is 
+
 
 By embedding generative art coding with p5.js into the background of a Hugo markdown page, we can achieve interactive results. Add the following markdown to the page:
 
