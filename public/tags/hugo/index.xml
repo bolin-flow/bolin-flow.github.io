@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Creative Coding on Gulu :paw_prints: Gulu</title>
-    <link>http://localhost:1313/tags/creative-coding/</link>
-    <description>Recent content in Creative Coding on Gulu :paw_prints: Gulu</description>
+    <title>Hugo on Gulu :paw_prints: Gulu</title>
+    <link>http://localhost:1313/tags/hugo/</link>
+    <description>Recent content in Hugo on Gulu :paw_prints: Gulu</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>@copyright 2024 Bolin</copyright>
     <lastBuildDate>Tue, 02 Jul 2024 12:16:56 -0400</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/creative-coding/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Integrate Interactive Visuals into Hugo Websites</title>
+      <title>Integrate Interactive Visuals to Hugo Websites</title>
       <link>http://localhost:1313/developing/interactive_visual/</link>
       <pubDate>Tue, 02 Jul 2024 12:16:56 -0400</pubDate>
       <guid>http://localhost:1313/developing/interactive_visual/</guid>
-      <description>There are main x steps to integrate intergrate visualizations to Hugo website.</description>
+      <description>There are a few steps to integrate visualizations into a self-hosted Hugo website.</description>
     </item>
   </channel>
 </rss>

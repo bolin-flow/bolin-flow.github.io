@@ -17,8 +17,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="rgb(255,255,255)" />
   
-  <title>Integrate Interactive Visuals to Hugo Webpage &middot; Gulu 🐾 Gulu</title>
-    <meta name="title" content="Integrate Interactive Visuals to Hugo Webpage &middot; Gulu 🐾 Gulu" />
+  <title>Hugo &middot; Gulu 🐾 Gulu</title>
+    <meta name="title" content="Hugo &middot; Gulu 🐾 Gulu" />
   
   
   
@@ -75,14 +75,15 @@
     name="description"
     content="
       
-        There are some methods to integrate visualizations into a self-hosted Hugo website.
+        
       
     "
   />
   
   
   
-  <link rel="canonical" href="http://localhost:1313/developing/interactive_visual/" />
+  <link rel="canonical" href="http://localhost:1313/tags/hugo/" />
+  <link rel="alternate" type="application/rss+xml" href="/tags/hugo/index.xml" title="Gulu 🐾 Gulu" />
   
   
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
@@ -97,53 +98,18 @@
   
   
   
-  <meta property="og:url" content="http://localhost:1313/developing/interactive_visual/">
+  <meta property="og:url" content="http://localhost:1313/tags/hugo/">
   <meta property="og:site_name" content="Gulu :paw_prints: Gulu">
-  <meta property="og:title" content="Integrate Interactive Visuals to Hugo Webpage">
-  <meta property="og:description" content="There are some methods to integrate visualizations into a self-hosted Hugo website.">
+  <meta property="og:title" content="Hugo">
   <meta property="og:locale" content="en">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="developing">
-    <meta property="article:published_time" content="2024-07-02T12:16:56-04:00">
-    <meta property="article:modified_time" content="2024-07-02T12:16:56-04:00">
-    <meta property="article:tag" content="Generative Art">
-    <meta property="article:tag" content="Creative Coding">
-    <meta property="article:tag" content="Hugo">
+  <meta property="og:type" content="website">
 
   
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Integrate Interactive Visuals to Hugo Webpage">
-  <meta name="twitter:description" content="There are some methods to integrate visualizations into a self-hosted Hugo website.">
+  <meta name="twitter:title" content="Hugo">
 
   
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "articleSection": "Developing",
-    "name": "Integrate Interactive Visuals to Hugo Webpage",
-    "headline": "Integrate Interactive Visuals to Hugo Webpage",
-    
-    "abstract": "There are some methods to integrate visualizations into a self-hosted Hugo website.",
-    "inLanguage": "en",
-    "url" : "http:\/\/localhost:1313\/developing\/interactive_visual\/",
-    "author" : {
-      "@type": "Person",
-      "name": "Bolin Li"
-    },
-    "copyrightYear": "2024",
-    "dateCreated": "2024-07-02T12:16:56-04:00",
-    "datePublished": "2024-07-02T12:16:56-04:00",
-    
-    "dateModified": "2024-07-02T12:16:56-04:00",
-    
-    "keywords": ["Generative Art","Creative Coding","Hugo"],
-    
-    "mainEntityOfPage": "true",
-    "wordCount": "1139"
-  }
-  </script>
-
+  
 
   
   <meta name="author" content="Bolin Li" />
@@ -420,22 +386,35 @@
     <div class="relative flex grow flex-col">
       <main id="main-content" class="grow">
         
-  <article>
-    <header class="max-w-prose">
-      
-      <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-        Integrate Interactive Visuals to Hugo Webpage
-      </h1>
-      
-        <div class="mb-12 mt-8 text-base text-neutral-500 print:hidden dark:text-neutral-400">
+  <header>
+    
+    <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">Hugo</h1>
+  </header>
+  
+  <section>
+    
+      <section>
+        
           
+            <article class="mt-6 flex max-w-prose flex-row">
+  <div>
+    <h3 class="flex items-center text-xl font-semibold">
+      
+        <a
+          class="text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
+          href="/developing/interactive_visual/"
+          >Integrate Interactive Visuals to Hugo Websites</a
+        >
+      
+      
+      
+    </h3>
+    <div class="text-sm text-neutral-500 dark:text-neutral-400">
+      
 
 
 
 
-
-  
-  
 
 
 
@@ -467,282 +446,49 @@
 
   
   
-
-
-        </div>
+    <div class="my-1 flex flex-wrap text-xs leading-relaxed text-neutral-500 dark:text-neutral-400">
       
+        
       
-    </header>
-    <section class="prose mt-0 flex max-w-full flex-col dark:prose-invert lg:flex-row">
-      
-      <div class="min-h-0 min-w-0 max-w-prose grow">
-        <p><strong>There are some methods to integrate visualizations into a self-hosted Hugo website.</strong></p>
-<p>For a markdown page in the Hugo content folder, start by creating a folder for each post.  Inside this post folder, create an <code>index.md</code> file. This is where we&rsquo;ll edit the content for that post. Hugo allows you to organize posts in different ways such as branch pages, leaf pages or other custom layouts, depending on the preferences. I’m using the Congo theme, which comes with some helpful explanations in the <a href="https://jpanther.github.io/congo/docs/content-examples" target="_blank" rel="noreferrer">documentation</a>.</p>
-<hr>
-<p>The first simple way to add visualizations is to include images inside the content folder. We can download some <a href="https://undraw.co/illustrations" target="_blank" rel="noreferrer">illustration</a> by <a href="https://ninalimpi.com/">Katerina Limpitsouni</a>.</p>
-<p>Download svg images<code>undraw_heart.svg</code>, <code>undraw_cloud.svg</code>, and <code>undraw_floating.svg</code>. There are different ways to insert images to one markdown file.</p>
-<pre tabindex="0"><code>&lt;div style=&#34;display: flex; justify-content: center; align-items: center;&#34;&gt;
-    &lt;img src=&#34;undraw_heart.svg&#34; alt=&#34;Heart&#34; style=&#34;margin-left: 10px;&#34;&gt;
-    &lt;img src=&#34;undraw_cloud.svg&#34; alt=&#34;Cloud&#34; style=&#34;margin-left: 10px;&#34;&gt;
-    &lt;img src=&#34;undraw_heart.svg&#34; alt=&#34;Heart&#34; style=&#34;margin-left: 10px;&#34;&gt;
-    &lt;img src=&#34;undraw_cloud.svg&#34; alt=&#34;Cloud&#34; style=&#34;margin-left: 10px;&#34;&gt;
-    &lt;img src=&#34;undraw_heart.svg&#34; alt=&#34;Heart&#34; style=&#34;margin-left: 10px;&#34;&gt;
-    &lt;img src=&#34;undraw_cloud.svg&#34; alt=&#34;Cloud&#34; style=&#34;margin-left: 10px;&#34;&gt;
-&lt;/div&gt;
-</code></pre><div style="display: flex; justify-content: center; align-items: center;">
-    <img src="undraw_heart.svg" alt="Heart" style="margin-left: 10px;">
-    <img src="undraw_cloud.svg" alt="Cloud" style="margin-left: 10px;">
-    <img src="undraw_heart.svg" alt="Heart" style="margin-left: 10px;">
-    <img src="undraw_cloud.svg" alt="Cloud" style="margin-left: 10px;">
-    <img src="undraw_heart.svg" alt="Heart" style="margin-left: 10px;">
-   <img src="undraw_cloud.svg" alt="Cloud" style="margin-left: 10px;">
-</div>
-<p>We can also use Hugo’s built-in shortcode for a simpler way to include images.</p>
-<ul>
-<li>
-<p><code>{{</code> &lt; figure src=&ldquo;undraw_floating.svg&rdquo; class=&ldquo;m-auto mt-6 max-w-prose&rdquo; &gt;  <code>}}</code></p>
-
-      
-      
-      
-      
-      
-    
-      
-      
-      <figure class="m-auto mt-6 max-w-prose">
         
           
+            <a
+              href="/tags/generative-art/"
+              class="mx-1 my-1 rounded-md border border-neutral-200 px-1 py-[1px] hover:border-primary-300 hover:text-primary-700 dark:border-neutral-600 dark:hover:border-primary-600 dark:hover:text-primary-400"
+              >Generative Art</a
+            >
           
-    
-    
-    
-    
-    
-    
-    
-    
-      
-        
-        
-        
-        
+            <a
+              href="/tags/creative-coding/"
+              class="mx-1 my-1 rounded-md border border-neutral-200 px-1 py-[1px] hover:border-primary-300 hover:text-primary-700 dark:border-neutral-600 dark:hover:border-primary-600 dark:hover:text-primary-400"
+              >Creative Coding</a
+            >
+          
+            <a
+              href="/tags/hugo/"
+              class="mx-1 my-1 rounded-md border border-neutral-200 px-1 py-[1px] hover:border-primary-300 hover:text-primary-700 dark:border-neutral-600 dark:hover:border-primary-600 dark:hover:text-primary-400"
+              >Hugo</a
+            >
           
         
-        
-          
-        
-        
-        
-        
-        <picture  class="m-auto mt-6 max-w-prose" >
-          <img
-            src="/developing/interactive_visual/undraw_floating.svg"
-            width="865.57286"
-            height="658.54932"
-            class="m-auto mt-6 max-w-prose"
-            
-            loading="lazy" decoding="async"
-          />
-        </picture>
       
-    
-    
-        
-      </figure>
-    
-
-</li>
-</ul>
-<p style="text-align: center;">
-    Illustration by <a href="https://ninalimpi.com/">Katerina Limpitsouni</a>
-</p>
-<script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script> <!-- load p5.js from CDN--> 
-<script src="/js/particles.js"></script> <!-- pick the script  -->
-<hr>
-<p>Another creative approach is to embed interactive visualizations using the p5.js JavaScript library. To do this, first, create a <code>js</code> folder inside the `static`` folder of your Hugo web repository. We can place different visualizations built with p5.js or other tools in this js folder, and then call the custom visulizations on specific pages as needed.</p>
-<p>Let’s create a simple interactive particles.js file for current `webpage`` that responds to left mouse clicks. Below, we break down the code into 8 key blocks, explaining how each part contributes to the visualizations triggered by user actions. Try clicking the left mouse button once or twice outside the image area or code block to see the visual effects in action!</p>
-<details>
-<summary>
-Click to view explanations of the key steps for generating stars and hearts with clicks.
-</summary>
-*Step 1: Setting Up Variables*
-<pre tabindex="0"><code>let particles = [];
-let clickCount = 0;
-</code></pre><ul>
-<li><code>particles</code> is an array that will hold all the particle objects we create.</li>
-<li><code>clickCount</code> keeps track of the number of left mouse clicks to determine which shape to generate.</li>
-</ul>
-<p><em>Step 2: Setting Up the Canvas</em></p>
-<p>Creates a full-window canvas positioned behind other content.</p>
-<pre tabindex="0"><code>function setup() {
-  let canvas = createCanvas(windowWidth, windowHeight);
-  canvas.position(0, 0);
-  canvas.style(&#39;z-index&#39;, &#39;-1&#39;);
-  canvas.style(&#39;position&#39;, &#39;fixed&#39;);
-}
-</code></pre><ul>
-<li><code>setup()</code> is a special function in p5.js that runs once when the program starts.</li>
-<li><code>createCanvas(windowWidth, windowHeight)</code> creates a canvas that covers the <u>entire browser window</u>.</li>
-<li><code>canvas.position(0, 0)</code> positions the canvas at the top-left corner of the window.</li>
-<li><code>canvas.style('z-index', '-1')</code> moves the canvas behind other content on the page.</li>
-<li><code>canvas.style('position', 'fixed')</code> ensures the canvas stays fixed in place as the user scrolls.</li>
-</ul>
-<p><em>Step 3: Drawing and Updating the Canvas</em></p>
-<pre tabindex="0"><code>function draw() {
-  clear(); // Clears the canvas, making it transparent
-
-  for (let i = particles.length - 1; i &gt;= 0; i--) {
-    particles[i].update();
-    particles[i].show();
-    if (particles[i].finished()) {
-      particles.splice(i, 1);
-    }
-  }
-}
-</code></pre><p>Continuously clears and redraws particles, removing them when they fade out.</p>
-<ul>
-<li><code>draw()</code> is a special function that continuously executes the code inside it, typically at 60 frames per second.</li>
-<li><code>clear()</code> clears the entire canvas, making it transparent, so the previous frame is removed.</li>
-<li>This for loop goes through each particle in the particles array in reverse order (to avoid issues when removing particles).</li>
-<li><code>particles[i].update()</code> updates the particle&rsquo;s position and state.</li>
-<li><code>particles[i].show()</code> displays the particle on the canvas.</li>
-<li>If the <code>particle</code> has &ldquo;finished&rdquo; (its alpha value is below zero), it&rsquo;s removed from the array using particles.splice(i, 1).</li>
-</ul>
-<p><em>Step 4: Handling Mouse Clicks</em></p>
-<pre tabindex="0"><code>function mousePressed() {
-  clickCount++;
-  setTimeout(() =&gt; {
-    if (clickCount === 1) {
-      addParticles(&#39;star&#39;);
-    } else if (clickCount === 2) {
-      addParticles(&#39;heart&#39;);
-    }
-    clickCount = 0; // Reset click count
-  }, 250);
-}
-</code></pre><p>Tracks single or double clicks to decide which shape to generate.</p>
-<ul>
-<li><code>mousePressed()</code> is a built-in p5.js function that triggers whenever the mouse is pressed.</li>
-<li><code>clickCount++</code> increments the clickCount variable each time the mouse is clicked.</li>
-<li><code>setTimeout()</code> waits for <code>250 milliseconds</code> to check the number of clicks.</li>
-<li>If clickCount equals 1, it calls <code>addParticles('star')</code> to generate star-shaped particles.</li>
-<li>If clickCount equals 2, it calls <code>addParticles('heart')</code> to generate heart-shaped particles.</li>
-<li><code>clickCount = 0</code> resets the click count after processing.</li>
-</ul>
-<p><em>Step 5: Adding Particles</em></p>
-<pre tabindex="0"><code>function addParticles(shape) {
-  for (let i = 0; i &lt; 10; i++) { // Generate 10 particles
-    particles.push(new Particle(mouseX, mouseY, shape));
-  }
-}
-</code></pre><ul>
-<li><code>addParticles(shape)</code> creates 10 new particles at the current mouse position (mouseX, mouseY).</li>
-<li>Each particle is pushed into the particles array with a specified shape <code>(star or heart)</code>.</li>
-</ul>
-<p><em>Step 6: Adjusting Canvas Size on Window Resize</em></p>
-<pre tabindex="0"><code>function windowResized() {
-  resizeCanvas(windowWidth, windowHeight);
-}
-</code></pre><ul>
-<li><code>windowResized()</code> is a p5.js function that triggers whenever the browser window is resized.</li>
-<li><code>resizeCanvas(windowWidth, windowHeight)</code> adjusts the canvas size to match the new window dimensions.</li>
-</ul>
-<p><em>Step 7: Creating the Particle Class</em></p>
-<pre tabindex="0"><code>class Particle {
-  constructor(x, y, shape) {
-    this.x = x;
-    this.y = y;
-    this.vx = random(-1, 1);
-    this.vy = random(-1, 1);
-    this.alpha = 255;
-    this.color = color(random(255), random(255), random(255), this.alpha);
-    this.shape = shape;
-  }
-}
-</code></pre><ul>
-<li>This code defines <em>a Particle class</em>.</li>
-<li>The <code>constructor(x, y, shape)</code> method initializes each particle with:</li>
-<li><code>x, y</code>: Position on the canvas.</li>
-<li><code>vx, vy</code>: Random velocity in both directions.</li>
-<li><code>alpha</code>: Initial transparency (<em>255 is fully opaque</em>).</li>
-<li><code>color</code>: Random color with the specified alpha.</li>
-<li><code>shape</code>: The shape of the particle (<code>star or heart</code>).</li>
-</ul>
-<p><em>Step 8: Updating and Showing Star and Heart Particles</em></p>
-<pre tabindex="0"><code>  update() {
-    this.x += this.vx;
-    this.y += this.vy;
-    this.alpha -= 5;
-    this.color.setAlpha(this.alpha); // Update alpha for fading effect
-  }
-
-  finished() {
-    return this.alpha &lt; 0;
-  }
-
-  show() {
-    noStroke();
-    fill(this.color);
-    if (this.shape === &#39;star&#39;) {
-      beginShape();
-      for (let i = 0; i &lt; 5; i++) {
-        let angle = TWO_PI / 5 * i;
-        let x = this.x + cos(angle) * 8;
-        let y = this.y + sin(angle) * 8;
-        vertex(x, y);
-        angle += TWO_PI / 10;
-        x = this.x + cos(angle) * 4;
-        y = this.y + sin(angle) * 4;
-        vertex(x, y);
-      }
-      endShape(CLOSE);
-    } else if (this.shape === &#39;heart&#39;) {
-      beginShape();
-      vertex(this.x, this.y);
-      bezierVertex(this.x - 5, this.y - 5, this.x - 10, this.y + 5, this.x, this.y + 10);
-      bezierVertex(this.x + 10, this.y + 5, this.x + 5, this.y - 5, this.x, this.y);
-      endShape(CLOSE);
-    }
-  }
-}
-</code></pre><ul>
-<li><code>update()</code>: Updates the particle&rsquo;s position by adding the <code>velocity</code> to x and y.</li>
-<li><code>update()</code> also decreases the alpha value, making the particle more transparent over time.</li>
-<li><code>finished()</code>: Returns true if the particle is <code>fully transparent (alpha &lt; 0)</code>, indicating it should be removed from the particles array.</li>
-<li><code>show()</code>: Displays the particle on the canvas:</li>
-<li><code>noStroke()</code> removes any outline from the shape.</li>
-<li><code>fill(this.color)</code> fills the shape with the random particle&rsquo;s color.</li>
-<li>If the particle&rsquo;s shape is <code>star</code>, it draws a star using <code>beginShape(), vertex()</code>, and <code>trigonometric functions (cos, sin)</code>.</li>
-<li>If the shape is <code>heart</code>, it draws a heart using <code>bezierVertex() </code>to create smooth curves.</li>
-</ul>
-
-      </div>
-    </section>
-    <footer class="max-w-prose pt-8 print:hidden">
-      
-
-      
-
-      
+    </div>
   
 
 
-      
-    </footer>
-  </article>
+    </div>
+    
+  </div>
+</article>
 
+          
         
-          <div class="pointer-events-none absolute bottom-0 end-0 top-[100vh] w-12">
-            <a
-              href="#the-top"
-              class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 backdrop-blur hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
-              aria-label="Scroll to top"
-              title="Scroll to top"
-            >
-              &uarr;
-            </a>
-          </div>
+      </section>
+      
+
+    
+  </section>
+
         
       </main><footer class="py-10 print:hidden">
   

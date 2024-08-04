@@ -7,21 +7,14 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>@copyright 2024 Bolin</copyright>
-    <lastBuildDate>Mon, 22 Jul 2024 12:16:56 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 02 Jul 2024 12:16:56 -0400</lastBuildDate>
     <atom:link href="http://localhost:1313/developing/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Steps to Integrate Interactive Visuals into Hugo Websites</title>
+      <title>Integrate Interactive Visuals to Hugo Webpage</title>
       <link>http://localhost:1313/developing/interactive_visual/</link>
-      <pubDate>Mon, 22 Jul 2024 12:16:56 -0400</pubDate>
+      <pubDate>Tue, 02 Jul 2024 12:16:56 -0400</pubDate>
       <guid>http://localhost:1313/developing/interactive_visual/</guid>
-      <description>There are main x steps to integrate intergrate visualizations to Hugo website.</description>
-    </item>
-    <item>
-      <title>First Post</title>
-      <link>http://localhost:1313/developing/first-post/</link>
-      <pubDate>Sun, 14 Jul 2024 19:16:07 -0400</pubDate>
-      <guid>http://localhost:1313/developing/first-post/</guid>
-      <description>This is the first post # {{ $image := .</description>
+      <description>There are some methods to integrate visualizations into a self-hosted Hugo website.</description>
     </item>
   </channel>
 </rss>
