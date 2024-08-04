@@ -47,7 +47,7 @@ We can also use Hugo’s built-in shortcode for a simpler way to include images.
 <script src="/js/particles.js"></script> <!-- pick the script  -->
 
 --- 
-Another creative approach is to embed interactive visualizations using the p5.js JavaScript library. The main page of my website features a creative coding effect inspired by [oggy's artwork](https://openprocessing.org/user/32527?view=sketches&o=48). I made several modifications to adapt it to different window sizes, adjust the speed and transparency of the triangles, and update the background colors based on user interactions.
+Another creative approach is to embed interactive visualizations using the p5.js JavaScript library. The main page of my website features a creative coding effect built by [oggy's artwork](https://openprocessing.org/user/32527?view=sketches&o=48). I made several modifications to adapt it to different window sizes, adjust the speed and transparency of the triangles, and update the background colors based on user interactions.
 
 Wondering how to add interactive visuals to your own webpages? Start by creating a js folder inside the static folder of your Hugo web repository. We can place various visualizations built with p5.js or other tools in this folder and then call them on specific pages as needed. This approach is inspred by [Ariel Mundo's sharing](https://aimundo.rbind.io/blog/2021-07-25-testing-javascript-visualizations/) and [Deisy Gysi’s main page](https://deisygysi.github.io/). 
 
