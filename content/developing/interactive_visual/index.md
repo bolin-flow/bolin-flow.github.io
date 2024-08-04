@@ -47,15 +47,18 @@ We can also use Hugo’s built-in shortcode for a simpler way to include images.
 <script src="/js/particles.js"></script> <!-- pick the script  -->
 
 --- 
-Another creative approach is to embed interactive visualizations using the p5.js JavaScript library. To do this, first, create a `js` folder inside the `static` folder of your Hugo web repository. We can place different visualizations built with p5.js or other tools in this js folder, and then call the custom visulizations on specific pages as needed.
+Another creative approach is to embed interactive visualizations using the p5.js JavaScript library. The main page of my website features a creative coding effect inspired by [oggy's artwork](https://openprocessing.org/user/32527?view=sketches&o=48). I made several modifications to adapt it to different window sizes, adjust the speed and transparency of the triangles, and update the background colors based on user interactions.
 
-Let’s create a simple interactive particles.js file for current `webpage`` that responds to left mouse clicks. Below, we break down the code into 8 key blocks, explaining how each part contributes to the visualizations triggered by user actions. Try clicking the left mouse button once or twice outside the image area or code block to see the visual effects in action!
+Wondering how to add interactive visuals to your own webpages? Start by creating a js folder inside the static folder of your Hugo web repository. We can place various visualizations built with p5.js or other tools in this folder and then call them on specific pages as needed. This approach is inspred by [Ariel Mundo's sharing](https://aimundo.rbind.io/blog/2021-07-25-testing-javascript-visualizations/) and [Deisy Gysi’s main page](https://deisygysi.github.io/). 
+
+Now, let’s create a simple interactive particles.js file for the current webpage that responds to left mouse clicks. Below, we break down the code into 8 blocks, explaining how each part contributes to the visualizations triggered by user actions. Try clicking the left mouse button once or twice outside the image area or code block to see the visual effects in action!
 
 <details>
 
 <summary>
 <b>Click to view explanations of the key steps for generating stars and hearts with clicks.</b>
 </summary>
+
 *Step 1: Setting Up Variables*
 
 ```

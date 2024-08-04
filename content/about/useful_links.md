@@ -37,4 +37,5 @@ showAuthor = true
 [Beautiful background in Deisy Gysi’s site](https://deisygysi.github.io/)
 
 ##   
-[Detailed resume updated on 2023 Sep](https://libolin.notion.site/Bolin-Li-977016c19b23455e9ab64c877f9a2bb1?pvs=4)
+
+<!--[Resume updated on 2023 Sep](https://libolin.notion.site/Bolin-Li-977016c19b23455e9ab64c877f9a2bb1?pvs=4)-->
