@@ -47,14 +47,14 @@ We can also use Hugo’s built-in shortcode for a simpler way to include images.
 <script src="/js/particles.js"></script> <!-- pick the script  -->
 
 --- 
-Another creative approach is to embed interactive visualizations using the p5.js JavaScript library. To do this, first, create a `js` folder inside the `static`` folder of your Hugo web repository. We can place different visualizations built with p5.js or other tools in this js folder, and then call the custom visulizations on specific pages as needed.
+Another creative approach is to embed interactive visualizations using the p5.js JavaScript library. To do this, first, create a `js` folder inside the `static` folder of your Hugo web repository. We can place different visualizations built with p5.js or other tools in this js folder, and then call the custom visulizations on specific pages as needed.
 
 Let’s create a simple interactive particles.js file for current `webpage`` that responds to left mouse clicks. Below, we break down the code into 8 key blocks, explaining how each part contributes to the visualizations triggered by user actions. Try clicking the left mouse button once or twice outside the image area or code block to see the visual effects in action!
 
 <details>
 
 <summary>
-Click to view explanations of the key steps for generating stars and hearts with clicks.
+<b>Click to view explanations of the key steps for generating stars and hearts with clicks.</b>
 </summary>
 *Step 1: Setting Up Variables*
 
@@ -83,6 +83,7 @@ function setup() {
 - `canvas.position(0, 0)` positions the canvas at the top-left corner of the window.
 - `canvas.style('z-index', '-1')` moves the canvas behind other content on the page.
 - `canvas.style('position', 'fixed')` ensures the canvas stays fixed in place as the user scrolls.
+
 
 *Step 3: Drawing and Updating the Canvas*
 
@@ -231,3 +232,5 @@ class Particle {
 - `fill(this.color)` fills the shape with the random particle's color.
 - If the particle's shape is `star`, it draws a star using `beginShape(), vertex()`, and `trigonometric functions (cos, sin)`.
 - If the shape is `heart`, it draws a heart using `bezierVertex() `to create smooth curves.
+
+</details>

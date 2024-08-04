@@ -560,11 +560,11 @@
 <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script> <!-- load p5.js from CDN--> 
 <script src="/js/particles.js"></script> <!-- pick the script  -->
 <hr>
-<p>Another creative approach is to embed interactive visualizations using the p5.js JavaScript library. To do this, first, create a <code>js</code> folder inside the `static`` folder of your Hugo web repository. We can place different visualizations built with p5.js or other tools in this js folder, and then call the custom visulizations on specific pages as needed.</p>
+<p>Another creative approach is to embed interactive visualizations using the p5.js JavaScript library. To do this, first, create a <code>js</code> folder inside the <code>static</code> folder of your Hugo web repository. We can place different visualizations built with p5.js or other tools in this js folder, and then call the custom visulizations on specific pages as needed.</p>
 <p>Let’s create a simple interactive particles.js file for current `webpage`` that responds to left mouse clicks. Below, we break down the code into 8 key blocks, explaining how each part contributes to the visualizations triggered by user actions. Try clicking the left mouse button once or twice outside the image area or code block to see the visual effects in action!</p>
 <details>
 <summary>
-Click to view explanations of the key steps for generating stars and hearts with clicks.
+<b>Click to view explanations of the key steps for generating stars and hearts with clicks.</b>
 </summary>
 *Step 1: Setting Up Variables*
 <pre tabindex="0"><code>let particles = [];
@@ -716,7 +716,7 @@ let clickCount = 0;
 <li>If the particle&rsquo;s shape is <code>star</code>, it draws a star using <code>beginShape(), vertex()</code>, and <code>trigonometric functions (cos, sin)</code>.</li>
 <li>If the shape is <code>heart</code>, it draws a heart using <code>bezierVertex() </code>to create smooth curves.</li>
 </ul>
-
+</details>
       </div>
     </section>
     <footer class="max-w-prose pt-8 print:hidden">
