@@ -10,11 +10,11 @@
     <lastBuildDate>Tue, 02 Jul 2024 12:16:56 -0400</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/generative-art/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Integrate Interactive Visuals into Hugo Websites</title>
+      <title>Integrate Interactive Visuals to Hugo Webpage</title>
       <link>http://localhost:1313/developing/interactive_visual/</link>
       <pubDate>Tue, 02 Jul 2024 12:16:56 -0400</pubDate>
       <guid>http://localhost:1313/developing/interactive_visual/</guid>
-      <description>There are main x steps to integrate intergrate visualizations to Hugo website.</description>
+      <description>There are some methods to integrate visualizations into a self-hosted Hugo website.</description>
     </item>
   </channel>
 </rss>

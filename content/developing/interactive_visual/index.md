@@ -3,6 +3,7 @@ title = 'Integrate Interactive Visuals to Hugo Webpage'
 date = 2024-07-02T12:16:56-04:00
 draft = false
 tags = ['Generative Art', 'Creative Coding', 'Hugo']
+showTableOfContents = false
 
 +++
 

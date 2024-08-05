@@ -75,7 +75,7 @@
     name="description"
     content="
       
-        
+        This post primarily discusses the challenges faced by RAG, as explored in the paper, and shares some insights from a practical perspective.
       
     "
   />
@@ -100,15 +100,20 @@
   <meta property="og:url" content="http://localhost:1313/exploring/double_edged_sword_rag/">
   <meta property="og:site_name" content="Gulu :paw_prints: Gulu">
   <meta property="og:title" content="The Double-Edged Sword of RAG Chatbots">
+  <meta property="og:description" content="This post primarily discusses the challenges faced by RAG, as explored in the paper, and shares some insights from a practical perspective.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="exploring">
     <meta property="article:published_time" content="2024-07-16T16:16:56-04:00">
     <meta property="article:modified_time" content="2024-07-16T16:16:56-04:00">
+    <meta property="article:tag" content="Literature Review">
+    <meta property="article:tag" content="RAG">
+    <meta property="article:tag" content="LLM">
 
   
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="The Double-Edged Sword of RAG Chatbots">
+  <meta name="twitter:description" content="This post primarily discusses the challenges faced by RAG, as explored in the paper, and shares some insights from a practical perspective.">
 
   
   <script type="application/ld+json">
@@ -119,7 +124,7 @@
     "name": "The Double-Edged Sword of RAG Chatbots",
     "headline": "The Double-Edged Sword of RAG Chatbots",
     
-    
+    "abstract": "This post primarily discusses the challenges faced by RAG, as explored in the paper, and shares some insights from a practical perspective.",
     "inLanguage": "en",
     "url" : "http:\/\/localhost:1313\/exploring\/double_edged_sword_rag\/",
     "author" : {
@@ -132,10 +137,10 @@
     
     "dateModified": "2024-07-16T16:16:56-04:00",
     
-    
+    "keywords": ["Literature Review","RAG","LLM"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "0"
+    "wordCount": "1000"
   }
   </script>
 
@@ -458,15 +463,6 @@
 
     
     
-      <span class="ps-2"><span class="flex">
-  <span
-    class="ms-1 rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
-  >
-    Draft
-  </span>
-</span>
-</span>
-    
   </div>
 
   
@@ -479,8 +475,140 @@
     </header>
     <section class="prose mt-0 flex max-w-full flex-col dark:prose-invert lg:flex-row">
       
+        <div class="order-first px-0 lg:order-last lg:max-w-xs lg:ps-8">
+          <div class="toc pe-5 print:hidden lg:sticky lg:top-10">
+            <details open class="-ms-5 mt-0 overflow-hidden rounded-lg ps-5">
+  <summary
+    class="block cursor-pointer bg-neutral-100 py-1 ps-5 text-lg font-semibold text-neutral-800 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden"
+  >
+    Table of Contents
+  </summary>
+  <div class="border-s border-dotted border-neutral-300 py-2 ps-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#experimental-method">Experimental Method</a>
+      <ul>
+        <li><a href="#experiment-steps">Experiment Steps</a></li>
+        <li><a href="#control-variables">Control Variables:</a></li>
+      </ul>
+    </li>
+    <li><a href="#results">Results</a>
+      <ul>
+        <li><a href="#noisy-context-and-addtional-content">Noisy Context and Addtional Content</a></li>
+        <li><a href="#mismatches-unusual-formatting-and-incomplete-context">Mismatches, Unusual Formatting and Incomplete Context</a></li>
+      </ul>
+    </li>
+    <li><a href="#perspectives">Perspectives</a></li>
+    <li><a href="#reminders">Reminders</a></li>
+  </ul>
+</nav>
+  </div>
+</details>
+
+          </div>
+        </div>
+      
       <div class="min-h-0 min-w-0 max-w-prose grow">
+        <p>This post primarily discusses the challenges faced by RAG, as explored in <a href="https://arxiv.org/abs/2403.01193" target="_blank" rel="noreferrer">the paper</a>, and shares some insights from a practical perspective.</p>
+<p>The paper addresses the persistent issue of hallucination, where large language models tend to generate false information. <strong>These hallucinations pose significant challenges in fields requiring high levels of accuracy and precision, such as healthcare, finance, and law.</strong> The critical nature of this problem is underscored by recent court cases where ChatGPT produced citations of non-existent legal rulings. The discussion delves into the ongoing challenges that Retrieval-Augmented Generation (RAG) faces in practice, the inherent complexity of hallucinations, and the implications for deploying RAG LLMs in real-world scenarios.</p>
+<h2 id="experimental-method" class="relative group">Experimental Method <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#experimental-method" aria-label="Anchor">#</a></span></h2><blockquote>
+<p>To minimize this issue, we designed an experiment where academics review their own educational background, work experience, and publications using their curriculum vitae. The CV serves as a best-case proxy for search results from a fully-functional RAG system.</p>
+</blockquote>
+<p>Here, The experimental method introduces a scenario involving academic CV reviews. In the experiment, CV is assumed to represent the ideal output that a fully-functional RAG system could produce. In this setup, we can eliminate the uncertainties that RAG itself could introduce, allowing for a deeper exploration of the hallucination problem in LLMs.</p>
+<h3 id="experiment-steps" class="relative group">Experiment Steps <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#experiment-steps" aria-label="Anchor">#</a></span></h3><ol>
+<li>Collected CVs and responses from academic community members.</li>
+<li>Subjects then uploaded their CVs along with demographic information, including names and current institutions. This information was used to build the prompts.</li>
+<li>Once loaded, the subjects were guided through a series of interactions with the LLM.</li>
+</ol>
+<h3 id="control-variables" class="relative group">Control Variables: <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#control-variables" aria-label="Anchor">#</a></span></h3><p>The subjects were presented with three prompt/response pairs under two different conditions. In each case, the participant&rsquo;s name and institution were used.</p>
+<ul>
+<li>In Condition 1, the CV was not included as context.</li>
+<li>While in Condition 2, it was included.</li>
+</ul>
+<p>Participants were randomly assigned to either the &ldquo;with context&rdquo; or &ldquo;without context&rdquo; setting. All tests were conducted using the OpenAI GPT-3.5-turbo-16k-0613 model, which supports up to 16,000 tokens, suitable for particularly long CVs.</p>
+<h2 id="results" class="relative group">Results <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#results" aria-label="Anchor">#</a></span></h2><p>
+
+
+
+
+
+<figure>
+    
+    
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mx-auto my-0 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            srcset="/exploring/double_edged_sword_rag/results_hu48cc7b3d12826b81949544398ff29da4_153229_330x0_resize_q75_h2_box_3.webp 330w,/exploring/double_edged_sword_rag/results_hu48cc7b3d12826b81949544398ff29da4_153229_660x0_resize_q75_h2_box_3.webp 660w
+            
+              
+                ,/exploring/double_edged_sword_rag/results_hu48cc7b3d12826b81949544398ff29da4_153229_733x419_resize_q75_h2_box_3.webp 733w
+              
+            
+            
+              
+                ,/exploring/double_edged_sword_rag/results_hu48cc7b3d12826b81949544398ff29da4_153229_733x419_resize_q75_h2_box_3.webp 733w
+              
+            "
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="733"
+        height="419"
+        class="mx-auto my-0 rounded-md"
+        alt="results_png"
+        loading="lazy" decoding="async"
         
+          src="/exploring/double_edged_sword_rag/results_hu48cc7b3d12826b81949544398ff29da4_153229_660x0_resize_box_3.png"
+          srcset="/exploring/double_edged_sword_rag/results_hu48cc7b3d12826b81949544398ff29da4_153229_330x0_resize_box_3.png 330w,/exploring/double_edged_sword_rag/results_hu48cc7b3d12826b81949544398ff29da4_153229_660x0_resize_box_3.png 660w
+          
+            ,/exploring/double_edged_sword_rag/results.png 733w
+          
+          
+            ,/exploring/double_edged_sword_rag/results.png 733w
+          "
+          sizes="100vw"
+        
+      />
+    </picture>
+  
+
+
+</figure>
+
+Out of a total of 1,125 items, 68 were identified as incorrect by the users reviewing the responses. Why are we still unable to capture the correct information?</p>
+<h3 id="noisy-context-and-addtional-content" class="relative group">Noisy Context and Addtional Content <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#noisy-context-and-addtional-content" aria-label="Anchor">#</a></span></h3><p>This is the most common error in context-based response augmentation. <strong>GPT3.5 occasionally generates responses using context from one section but continues into the next section instead of stopping after retrieving the relevant information from the prompt.</strong> For example, the generated text for the &ldquo;Education&rdquo; section might incorrectly include information from the &ldquo;Work History&rdquo; section.</p>
+<p>It was also observed that GPT3.5 <strong>does not always strictly follow the instructions provided in the user prompt</strong>. Sometimes it introduces irrelevant or partially related context, and at other times, it fails to adhere to the specified number of items mentioned in the prompt.</p>
+<h3 id="mismatches-unusual-formatting-and-incomplete-context" class="relative group">Mismatches, Unusual Formatting and Incomplete Context <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#mismatches-unusual-formatting-and-incomplete-context" aria-label="Anchor">#</a></span></h3><p>In several instances, <strong>the prompt’s query and the provided context were not fully aligned</strong> for the model to extract an accurate answer. Besides, it was observed that the model did not correctly capture or &ldquo;understand&rdquo; the information in the prompt, sometimes mistaking educational background for work experience.</p>
+<p>The model <strong>&ldquo;creatively&rdquo; filled in the gaps by generating a list of jobs for the empty section</strong>. It added fabricated jobs that seemed more credible by drawing on information from the education and publication histories to create a believable sequence. This highlights that the model&rsquo;s &ldquo;hallucinations&rdquo; can be more difficult to detect and that the model&rsquo;s and humans&rsquo; interpretations of certain items might differ.</p>
+<p>Due to the unique formatting of dates in the CV, the model occasionally <strong>misassigned dates to the wrong experiences</strong>. Some CVs included links, but since the model cannot access external web information, it <strong>generated responses that users considered incomplete</strong>, as they didn’t provide any details beyond the given context.</p>
+<h2 id="perspectives" class="relative group">Perspectives <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#perspectives" aria-label="Anchor">#</a></span></h2><p>LLM systems cannot fully serve as reliable &ldquo;libraries&rdquo; for information retrieval; they still produce varying degrees of hallucinations and errors. RAG (Retrieval-Augmented Generation) has become a popular method to reduce these hallucinations. RAGs dynamically retrieve and incorporate data from external sources based on the user’s query. By indexing similar text chunks, we provide LLMs with supplementary information to help generate more accurate responses. However, it’s important to acknowledge that RAG itself has limitations:</p>
+<ul>
+<li>Firstly, does the text indexed by RAG truly contain relevant content to assist in generating accurate responses? This research has shown that in the presence of complex or misleading search results, a RAG system may often get things wrong.</li>
+<li>Secondly, trained GPT model constrained by its training data. As mentioned in the paper, Emily Bender’s octopus analogy illustrates this well—where an intelligent octopus (standing in for an LLM) has learned to imitate human communication solely based on statistical patterns in intercepted undersea cable transmissions.</li>
+</ul>
+<p>LLMs can indeed accelerate development and productization, replacing some basic to intermediate NLP tasks. They are most accurate when operating within domains where the training set contains many correct and largely aligned examples. However, if our data includes conflicting sources or is contaminated with inaccurate information, the models will struggle to produce reliable content. Additionally, we need to keep in mind that the statistical patterns in the training data and a single large language model cannot fully capture the contextual nuances and specialized knowledge required for a specific industry.</p>
+<h2 id="reminders" class="relative group">Reminders <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#reminders" aria-label="Anchor">#</a></span></h2><p>Given the potential error rate of RAG systems, we need to consider what level of accuracy is acceptable for our real-world scenarios. When dealing with large volumes of data, the scale of this issue becomes more apparent. For example, in 2023, an estimated 8.5 billion Google searches were conducted daily. An equivalent advanced RAG system could potentially generate misleading or incorrect information around 500 million results per day. And this doesn’t even account for additional uncertainties and noisy data introduced in real-world applications.</p>
+<p>Therefore, relying entirely on LLMs would be overly optimistic. LLMs are great foundational tools for generating results, and I think it is essential to combine them with well-defined business rules and customized machine learning algorithms to develop a system that is both easy to monitor and evaluate.</p>
+
       </div>
     </section>
     <footer class="max-w-prose pt-8 print:hidden">
@@ -496,6 +624,17 @@
     </footer>
   </article>
 
+        
+          <div class="pointer-events-none absolute bottom-0 end-0 top-[100vh] w-12">
+            <a
+              href="#the-top"
+              class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 backdrop-blur hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+              aria-label="Scroll to top"
+              title="Scroll to top"
+            >
+              &uarr;
+            </a>
+          </div>
         
       </main><footer class="py-10 print:hidden">
   

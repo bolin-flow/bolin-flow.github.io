@@ -7,14 +7,14 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>@copyright 2024 Bolin</copyright>
-    <lastBuildDate>Tue, 16 Jul 2024 12:16:56 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 16 Jul 2024 16:16:56 -0400</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/literature-review/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Review the double-edged sword of RAG</title>
-      <link>http://localhost:1313/exploring/paper_review/</link>
-      <pubDate>Tue, 16 Jul 2024 12:16:56 -0400</pubDate>
-      <guid>http://localhost:1313/exploring/paper_review/</guid>
-      <description></description>
+      <title>The Double-Edged Sword of RAG Chatbots</title>
+      <link>http://localhost:1313/exploring/double_edged_sword_rag/</link>
+      <pubDate>Tue, 16 Jul 2024 16:16:56 -0400</pubDate>
+      <guid>http://localhost:1313/exploring/double_edged_sword_rag/</guid>
+      <description>This post primarily discusses the challenges faced by RAG, as explored in the paper, and shares some insights from a practical perspective.</description>
     </item>
   </channel>
 </rss>
