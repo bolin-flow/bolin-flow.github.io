@@ -57,7 +57,7 @@ Due to the unique formatting of dates in the CV, the model occasionally **misass
 
 ## Perspectives 
 
-LLM systems cannot fully serve as reliable "libraries" for information retrieval; they still produce varying degrees of hallucinations and errors. RAG (Retrieval-Augmented Generation) has become a popular method to reduce these hallucinations. RAGs dynamically retrieve and incorporate data from external sources based on the user’s query. By indexing similar text chunks, we provide LLMs with supplementary information to help generate more accurate responses. However, it’s important to acknowledge that RAG itself has limitations: 
+RAG systems with LLMs cannot fully serve as reliable "libraries" for information retrieval; they still produce varying degrees of hallucinations and errors. RAG (Retrieval-Augmented Generation) has become a popular method to reduce these hallucinations. RAGs dynamically retrieve and incorporate data from external sources based on the user’s query. By indexing similar text chunks, we provide LLMs with supplementary information to help generate more accurate responses. However, it’s important to acknowledge that RAG itself has limitations: 
 - Firstly, does the text indexed by RAG truly contain relevant content to assist in generating accurate responses? This research has shown that in the presence of complex or misleading search results, a RAG system may often get things wrong.
 - Secondly, trained GPT model constrained by its training data. As mentioned in the paper, Emily Bender’s octopus analogy illustrates this well—where an intelligent octopus (standing in for an LLM) has learned to imitate human communication solely based on statistical patterns in intercepted undersea cable transmissions. 
 
