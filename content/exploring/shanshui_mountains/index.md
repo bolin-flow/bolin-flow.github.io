@@ -1,5 +1,5 @@
 +++
-title = "Explore Ye Qianqian's Shan Shui"
+title = "Moving Mountains: Shan Shui in Motion"
 date = 2024-08-11T11:11:56-04:00
 draft = false
 tags = ['Generative Art', 'Creative Coding']
@@ -7,7 +7,7 @@ showTableOfContents = false
 
 +++
 
-The link of [the original work](https://qianqian-ye.com/Everyday/Day46/). 
+Ye Qianqian's [Shan Shui work](https://qianqian-ye.com/Everyday/Day46/). 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
 
@@ -19,8 +19,8 @@ The link of [the original work](https://qianqian-ye.com/Everyday/Day46/).
 
     function setup() {
 
-    let canvasWidth = windowWidth * 0.6;  // 80% of the window width
-    let canvasHeight = windowHeight * 0.8; // 60% of the window height
+    let canvasWidth = windowWidth * 0.7;  // window width
+    let canvasHeight = windowHeight * 0.8; // window height
     let canvas = createCanvas(canvasWidth, canvasHeight);
     canvas.parent('sketch-holder');
     shanShui();

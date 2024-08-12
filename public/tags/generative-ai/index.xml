@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Generative AI on Gulu :paw_prints: Gulu</title>
+    <link>http://localhost:1313/tags/generative-ai/</link>
+    <description>Recent content in Generative AI on Gulu :paw_prints: Gulu</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>@copyright 2024 Bolin</copyright>
+    <lastBuildDate>Mon, 12 Aug 2024 16:16:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/generative-ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Build Own ChatGPT: An Easy How-To</title>
+      <link>http://localhost:1313/developing/own_chatgpt/</link>
+      <pubDate>Mon, 12 Aug 2024 16:16:00 +0000</pubDate>
+      <guid>http://localhost:1313/developing/own_chatgpt/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
