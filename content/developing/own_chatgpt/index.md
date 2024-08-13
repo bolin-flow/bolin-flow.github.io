@@ -34,4 +34,9 @@ For more information on model suffixes and quantization in LLMs, visit [this pag
 
 Let's select one instruct small model and download it using ollama with this command `ollama run llama3.1:8b-instruct-q5_K_M`
 
-![download_llama3_model.png](download_llama3_model.png)
+![download_llama3_model.png](download_llama3_model.png) 
+We can interact with Ollama directly using terminal. 
+![commands_llama3_model.png](commands_llama3_model.png) 
+
+Now we can input questions directly or use curl command to interact LLM using ollama. 
+`curl` is a command-line tool used to send requests to URLs.
