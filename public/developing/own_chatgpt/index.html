@@ -139,7 +139,7 @@
     "keywords": ["LLM","Ollama"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "300"
+    "wordCount": "566"
   }
   </script>
 
@@ -487,6 +487,8 @@
   <ul>
     <li><a href="#download-ollama-and-run-commands">Download Ollama and Run Commands</a></li>
     <li><a href="#llm-sizes-types-and-quantizations">LLM Sizes, Types and Quantizations</a></li>
+    <li><a href="#view-modelfile-system-and-template">View Modelfile, System and Template</a></li>
+    <li><a href="#run-chat">Run Chat</a></li>
   </ul>
 </nav>
   </div>
@@ -558,7 +560,6 @@
 <li>Chat-Instruct: A conversation where you interact with a character card using the instruct template. For example, &ldquo;You are an AI playing [X character]; respond as the character would.&rdquo; This is then adapted to formats like Alpaca, Wizard, etc.</li>
 </ul>
 <p>There is no definitive &ldquo;best&rdquo; option, but for factual information, instruct mode is typically more reliable. However, instruct-chat doesn&rsquo;t necessarily improve character portrayal or produce longer responses. one may work better than the other for a particular model and prompt.</p>
-<p>K_M or K_S suffixes indicate a texture pack, where most textures are of a specific resolution, but some critical textures are kept at a higher resolution.</p>
 <p>For more information on model suffixes and quantization in LLMs, visit <a href="https://www.reddit.com/r/LocalLLaMA/comments/17lavtr/how_do_i_choose_the_llama_model_its_so_confusing/" target="_blank" rel="noreferrer">this page</a>. For performance statistics on different model sizes and quantizations, check <a href="https://github.com/ggerganov/llama.cpp/pull/1684#issuecomment-1579252501" target="_blank" rel="noreferrer">this comment</a></p>
 <p>Let&rsquo;s select one instruct small model and download it using ollama with this command <code>ollama run llama3.1:8b-instruct-q5_K_M</code></p>
 <p>
@@ -666,9 +667,102 @@ We can interact with Ollama directly using terminal.
 
 </figure>
 </p>
-<p>Now we can input questions directly or use curl command to interact LLM using ollama.
-<code>curl</code> is a command-line tool used to send requests to URLs.</p>
+<p>Now we can send questions directly or use curl command to interact LLM using ollama.
+<code>curl</code> is a command-line tool used to send requests to URLs. <code>http://localhost:11434/api/generate</code> is the URL endpoint of the local server running on the machine (localhost) at port 11434. The /api/generate path indicates that this request is related to generation exposed by ollama.</p>
+<pre tabindex="0"><code>curl http://localhost:11434/api/generate -d &#39;{
+&#34;model&#34;: &#34;gemma2:2b-instruct-q4_K_M&#34;,
+&#34;prompt&#34;: &#34;what is water made of?&#34;,
+&#34;stream&#34;: false
+}&#39; | jq .
+</code></pre><ul>
+<li><code>d</code> stands for &ldquo;data&rdquo; we are passing and is used to send the specified data in a POST request.</li>
+<li>The data contains arguments for ollama (JSON object with three key-value pairs)</li>
+<li>&ldquo;stream&rdquo; false means instead of streaming back one word at a time, we want everything all at once.</li>
+<li>The <code>|</code> is a pipe that takes the output of the <code>curl</code> command and passes it to another command.</li>
+<li><code>jq</code> is a command-line utility for parsing and processing JSON data. <code>.</code> tells <code>jq</code> to output the entire JSON response, formatted for easy reading.</li>
+</ul>
+<h2 id="view-modelfile-system-and-template" class="relative group">View Modelfile, System and Template <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#view-modelfile-system-and-template" aria-label="Anchor">#</a></span></h2><p>Run <code>ollama show model_name --modelfile</code> to view modelfile, relevant describtion, how the model works and where it lives.</p>
+<p><code>ollama show gemma2:2b-instruct-q4_K_M --modelfile</code></p>
+<ul>
+<li>TEMPLATE: Displays the system prompt if it exists.</li>
+<li>SYSTEM: Describes the chat scenario between a user and an AI assistant.</li>
+</ul>
+<p>How to create a custom system prompt for one selected model? we need to first copy the modelfile into our own file new-modelfile. Let&rsquo;s say the model is <code>phi</code>.
+<code>ollama show phi --modelfile &gt; new-modelfile</code> here <code>&gt;</code> means copy the modelfile to a new file new-modelfile. Then modify and save this new-modelfile file with updated system prompt. Finally, create a new model from the updated modelfile using <code>ollama create new-phi —-file new-modelfile</code>. Run <code>ollama run new-phi</code> to interact with the updated model!</p>
+<h2 id="run-chat" class="relative group">Run Chat <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#run-chat" aria-label="Anchor">#</a></span></h2><p>Download to <code>import ollama</code> python package and view the details with <code>ollama.list()</code></p>
+<details>
+<summary>
+<b>Click to view model details in the list.</b>
+</summary>
+<p>
 
+
+
+
+
+<figure>
+    
+    
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mx-auto my-0 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            srcset="/developing/own_chatgpt/ollama_list_huf657eef5a1fd16ffd8dd1b75f1da5ada_153640_330x0_resize_q75_h2_box_3.webp 330w,/developing/own_chatgpt/ollama_list_huf657eef5a1fd16ffd8dd1b75f1da5ada_153640_660x0_resize_q75_h2_box_3.webp 660w
+            
+              
+                ,/developing/own_chatgpt/ollama_list_huf657eef5a1fd16ffd8dd1b75f1da5ada_153640_884x916_resize_q75_h2_box_3.webp 884w
+              
+            
+            
+              
+                ,/developing/own_chatgpt/ollama_list_huf657eef5a1fd16ffd8dd1b75f1da5ada_153640_884x916_resize_q75_h2_box_3.webp 884w
+              
+            "
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="884"
+        height="916"
+        class="mx-auto my-0 rounded-md"
+        alt="ollama_list.png"
+        loading="lazy" decoding="async"
+        
+          src="/developing/own_chatgpt/ollama_list_huf657eef5a1fd16ffd8dd1b75f1da5ada_153640_660x0_resize_box_3.png"
+          srcset="/developing/own_chatgpt/ollama_list_huf657eef5a1fd16ffd8dd1b75f1da5ada_153640_330x0_resize_box_3.png 330w,/developing/own_chatgpt/ollama_list_huf657eef5a1fd16ffd8dd1b75f1da5ada_153640_660x0_resize_box_3.png 660w
+          
+            ,/developing/own_chatgpt/ollama_list.png 884w
+          
+          
+            ,/developing/own_chatgpt/ollama_list.png 884w
+          "
+          sizes="100vw"
+        
+      />
+    </picture>
+  
+
+
+</figure>
+</p>
+</details>
       </div>
     </section>
     <footer class="max-w-prose pt-8 print:hidden">
