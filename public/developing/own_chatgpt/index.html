@@ -75,7 +75,7 @@
     name="description"
     content="
       
-        Download Ollama and Run Commands #Ollama is a versatile tool that offers a range of language models with detailed specifications.
+        Updated Ollama Web UI on 2024-Aug-24
       
     "
   />
@@ -100,19 +100,19 @@
   <meta property="og:url" content="http://localhost:1313/developing/own_chatgpt/">
   <meta property="og:site_name" content="Gulu :paw_prints: Gulu">
   <meta property="og:title" content="Build Own ChatGPT: A Simple How-To">
-  <meta property="og:description" content="Download Ollama and Run Commands #Ollama is a versatile tool that offers a range of language models with detailed specifications.">
+  <meta property="og:description" content="Updated Ollama Web UI on 2024-Aug-24">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="developing">
-    <meta property="article:published_time" content="2024-08-12T16:16:00+00:00">
-    <meta property="article:modified_time" content="2024-08-12T16:16:00+00:00">
+    <meta property="article:published_time" content="2024-08-12T03:56:00+00:00">
+    <meta property="article:modified_time" content="2024-08-12T03:56:00+00:00">
     <meta property="article:tag" content="LLM">
     <meta property="article:tag" content="Ollama">
 
   
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Build Own ChatGPT: A Simple How-To">
-  <meta name="twitter:description" content="Download Ollama and Run Commands #Ollama is a versatile tool that offers a range of language models with detailed specifications.">
+  <meta name="twitter:description" content="Updated Ollama Web UI on 2024-Aug-24">
 
   
   <script type="application/ld+json">
@@ -123,7 +123,7 @@
     "name": "Build Own ChatGPT: A Simple How-To",
     "headline": "Build Own ChatGPT: A Simple How-To",
     
-    "abstract": "Download Ollama and Run Commands #Ollama is a versatile tool that offers a range of language models with detailed specifications.",
+    "abstract": "Updated Ollama Web UI on 2024-Aug-24",
     "inLanguage": "en",
     "url" : "http:\/\/localhost:1313\/developing\/own_chatgpt\/",
     "author" : {
@@ -131,15 +131,15 @@
       "name": "Bolin Li"
     },
     "copyrightYear": "2024",
-    "dateCreated": "2024-08-12T16:16:00\u002b00:00",
-    "datePublished": "2024-08-12T16:16:00\u002b00:00",
+    "dateCreated": "2024-08-12T03:56:00\u002b00:00",
+    "datePublished": "2024-08-12T03:56:00\u002b00:00",
     
-    "dateModified": "2024-08-12T16:16:00\u002b00:00",
+    "dateModified": "2024-08-12T03:56:00\u002b00:00",
     
     "keywords": ["LLM","Ollama"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "700"
+    "wordCount": "1088"
   }
   </script>
 
@@ -457,7 +457,7 @@
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <time datetime="2024-08-12 16:16:00 &#43;0000 UTC">12 August 2024</time>
+      <time datetime="2024-08-12 03:56:00 &#43;0000 UTC">12 August 2024</time>
     
 
     
@@ -489,7 +489,8 @@
     <li><a href="#llm-sizes-types-and-quantizations">LLM Sizes, Types, and Quantizations</a></li>
     <li><a href="#view-modelfile-system-and-template">View Modelfile, System, and Template</a></li>
     <li><a href="#run-llms-with-ollama">Run LLMs with Ollama</a></li>
-    <li><a href="#custom-system-prompt">Custom System Prompt</a></li>
+    <li><a href="#build-custom-system-prompt">Build Custom System Prompt</a></li>
+    <li><a href="#run-docker-image-for-ollama-web-ui">Run Docker Image for Ollama Web UI</a></li>
   </ul>
 </nav>
   </div>
@@ -499,7 +500,8 @@
         </div>
       
       <div class="min-h-0 min-w-0 max-w-prose grow">
-        <h2 id="download-ollama-and-run-commands" class="relative group">Download Ollama and Run Commands <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#download-ollama-and-run-commands" aria-label="Anchor">#</a></span></h2><p>Ollama is a versatile tool that offers a range of language models with detailed specifications. To get started, <a href="https://ollama.com/download" target="_blank" rel="noreferrer">download Ollama</a> and explore the different models available on the Ollama website. Once downloaded, you can use Ollama commands in your terminal.</p>
+        <p><sub>Updated Ollama Web UI on 2024-Aug-24</sub></p>
+<h2 id="download-ollama-and-run-commands" class="relative group">Download Ollama and Run Commands <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#download-ollama-and-run-commands" aria-label="Anchor">#</a></span></h2><p>Ollama is a versatile tool that offers a range of language models with detailed specifications. To get started, <a href="https://ollama.com/download" target="_blank" rel="noreferrer">download Ollama</a> and explore the different models available on the Ollama website. Once downloaded, you can use Ollama commands in your terminal.</p>
 <p>Run <code>ollama</code> to see the available commands:
 
 
@@ -764,11 +766,174 @@ Use the command <code>ollama show gemma2:2b-instruct-q4_K_M --modelfile &gt; new
 </figure>
 </p>
 </details>
-<h2 id="custom-system-prompt" class="relative group">Custom System Prompt <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#custom-system-prompt" aria-label="Anchor">#</a></span></h2><p>Copy the model file into your own file called <code>new-modelfile</code>. Use <code>&gt;</code> to copy the modelfile to the new file.
-Run command  <code>ollama show gemma2:2b-instruct-q4_K_M --modelfile &gt; new-modelfile</code> to copy the model file of gemma2:2b-instruct-q4_K_M into a new file named new-modelfile.</p>
-<p>If you ran the command in one specific directory, new-modelfile will be created in this directory. We can use the pwd command in the terminal to print the current working directory: <code>pwd</code>. We can also view the File: Use the cat command to display the contents of new-modelfile:
-<code>cat new-modelfile</code>. To code in Visual Studio Code by opening the Command Palette: Press Cmd+Shift+P.Type, and select: <code>Type Shell Command: Install 'code' command in PATH</code> and select it.</p>
-<p>create a new model from a Modelfile ollama create arr-phi —-file new-modelfile</p>
+<h2 id="build-custom-system-prompt" class="relative group">Build Custom System Prompt <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#build-custom-system-prompt" aria-label="Anchor">#</a></span></h2><p>To create a new model file from an existing model, you can follow these steps. This process involves copying the model file using the <code>&gt;</code> operator and creating <code>new-modelfile</code> using Ollama.</p>
+<p>Start by copying the modelfile into a new file named new-modelfile. You can do this by running the following command in your terminal: <code>ollama show gemma2:2b-instruct-q4_K_M --modelfile &gt; new-modelfile</code>
+This command will extract the model file for <code>gemma2:2b-instruct-q4_K_M</code> and save it as new-modelfile in your current directory.</p>
+<p>To view the contents of the newly created new-modelfile, use the cat command:<code>cat new-modelfile</code>. To confirm where the new-modelfile has been saved, you can use the <code>pwd</code> command to print the current working directory.</p>
+<details>
+<summary>
+<b>How to edit modelfile in Visual Studio Code.</b>
+</summary>
+If you want to edit the model file using Visual Studio Code, start by enabling the command to open files directly from the terminal. Open the Command Palette by pressing `Cmd+Shift+P` (Mac), type Shell Command, and select Install 'code' command in PATH. Once enabled, you can open the new-modelfile by running the command: `code new-modelfile` to open this file. After opening the file, you can add a custom prompt or make other modifications to the downloaded language model.
+<pre tabindex="0"><code>pwd
+code new-modelfile
+</code></pre></details>
+<h2 id="run-docker-image-for-ollama-web-ui" class="relative group">Run Docker Image for Ollama Web UI <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#run-docker-image-for-ollama-web-ui" aria-label="Anchor">#</a></span></h2><p>We can create an environment that can execute applications consistently across different systems using Docker. Using Docker for this chatbot UI provides a stable and isolated environment, ensuring the application runs smoothly across multiple systems. It simplifies setup, encapsulates dependencies, and allows for easy deployment with a single command. Docker also enables data persistence, scalability, and enhanced security, making it an ideal choice for managing your chatbot interface efficiently.
+Here&rsquo;s how we can set up and run a Docker container for Ollama Web UI:</p>
+<pre tabindex="0"><code>docker run -d -p 3000:8080 \
+--add-host=host.docker.internal:host-gateway \
+-v ollama-webui:/app/backend/data \
+--name ollama-webui \
+--restart always \
+ghcr.io/ollama-webui/ollama-webui:main
+</code></pre><ul>
+<li>docker run: Creates a new container.</li>
+<li>-d: Runs the container in the background (detached mode).</li>
+<li>-p 3000:8080: Maps host port 3000 to container port 8080.</li>
+<li>&ndash;add-host=host.docker.internal:host-gateway: Allows the container to access services on the host machine.</li>
+<li>-v: Creates a volume (ollama-webui) to persist data between sessions.</li>
+<li>&ndash;name: Names the container ollama-webui for easy identification.</li>
+<li>&ndash;restart always: Ensures the container restarts automatically if it stops.</li>
+<li>Image: ghcr.io/ollama-webui/ollama-webui:main specifies the main branch of the Ollama Web UI container image.</li>
+</ul>
+<p>After running the above command, if you see the message &ldquo;Unable to find image &lsquo;ghcr.io/ollama-webui/ollama-webui locally, main: Pulling from ollama-webui/ollama-webui,&rdquo; the image will then be downloaded. Once completed, run <code>docker ps</code> to display all running containers.</p>
+<pre tabindex="0"><code>CONTAINER ID   IMAGE                                    COMMAND           CREATED         STATUS         PORTS                    NAMES
+4b7938e75eac   ghcr.io/ollama-webui/ollama-webui:main   &#34;bash start.sh&#34;   2 minutes ago   Up 2 minutes   0.0.0.0:3000-&gt;8080/tcp   ollama-webui
+</code></pre><p>You can now access the web UI at http://127.0.0.1:3000/auth/. After signing up with a mock email address, you can select the locally downloaded model and start asking questions. Enjoy exploring!</p>
+<details>
+<summary>
+<b>Sign up and interact with Ollama Web UI</b>
+</summary>
+<p>
+
+
+
+
+
+<figure>
+    
+    
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mx-auto my-0 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            srcset="/developing/own_chatgpt/ollama_web_ui_hue4589592dc2de99de715db983f5aa847_172334_330x0_resize_q75_h2_box_3.webp 330w,/developing/own_chatgpt/ollama_web_ui_hue4589592dc2de99de715db983f5aa847_172334_660x0_resize_q75_h2_box_3.webp 660w
+            
+              ,/developing/own_chatgpt/ollama_web_ui_hue4589592dc2de99de715db983f5aa847_172334_1024x0_resize_q75_h2_box_3.webp 1024w
+            
+            
+              ,/developing/own_chatgpt/ollama_web_ui_hue4589592dc2de99de715db983f5aa847_172334_1320x0_resize_q75_h2_box_3.webp 1320w
+            "
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="1526"
+        height="1382"
+        class="mx-auto my-0 rounded-md"
+        alt="ollama_web_ui.png"
+        loading="lazy" decoding="async"
+        
+          src="/developing/own_chatgpt/ollama_web_ui_hue4589592dc2de99de715db983f5aa847_172334_660x0_resize_box_3.png"
+          srcset="/developing/own_chatgpt/ollama_web_ui_hue4589592dc2de99de715db983f5aa847_172334_330x0_resize_box_3.png 330w,/developing/own_chatgpt/ollama_web_ui_hue4589592dc2de99de715db983f5aa847_172334_660x0_resize_box_3.png 660w
+          
+            ,/developing/own_chatgpt/ollama_web_ui_hue4589592dc2de99de715db983f5aa847_172334_1024x0_resize_box_3.png 1024w
+          
+          
+            ,/developing/own_chatgpt/ollama_web_ui_hue4589592dc2de99de715db983f5aa847_172334_1320x0_resize_box_3.png 1320w
+          "
+          sizes="100vw"
+        
+      />
+    </picture>
+  
+
+
+</figure>
+
+
+
+
+
+
+
+<figure>
+    
+    
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mx-auto my-0 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            srcset="/developing/own_chatgpt/ollama_chat_qa_hu712b6e005ccb39edca1f67a9cc4a1089_182782_330x0_resize_q75_h2_box_3.webp 330w,/developing/own_chatgpt/ollama_chat_qa_hu712b6e005ccb39edca1f67a9cc4a1089_182782_660x0_resize_q75_h2_box_3.webp 660w
+            
+              ,/developing/own_chatgpt/ollama_chat_qa_hu712b6e005ccb39edca1f67a9cc4a1089_182782_1024x0_resize_q75_h2_box_3.webp 1024w
+            
+            
+              ,/developing/own_chatgpt/ollama_chat_qa_hu712b6e005ccb39edca1f67a9cc4a1089_182782_1320x0_resize_q75_h2_box_3.webp 1320w
+            "
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="1434"
+        height="948"
+        class="mx-auto my-0 rounded-md"
+        alt="ollama_chat_qa.png"
+        loading="lazy" decoding="async"
+        
+          src="/developing/own_chatgpt/ollama_chat_qa_hu712b6e005ccb39edca1f67a9cc4a1089_182782_660x0_resize_box_3.png"
+          srcset="/developing/own_chatgpt/ollama_chat_qa_hu712b6e005ccb39edca1f67a9cc4a1089_182782_330x0_resize_box_3.png 330w,/developing/own_chatgpt/ollama_chat_qa_hu712b6e005ccb39edca1f67a9cc4a1089_182782_660x0_resize_box_3.png 660w
+          
+            ,/developing/own_chatgpt/ollama_chat_qa_hu712b6e005ccb39edca1f67a9cc4a1089_182782_1024x0_resize_box_3.png 1024w
+          
+          
+            ,/developing/own_chatgpt/ollama_chat_qa_hu712b6e005ccb39edca1f67a9cc4a1089_182782_1320x0_resize_box_3.png 1320w
+          "
+          sizes="100vw"
+        
+      />
+    </picture>
+  
+
+
+</figure>
+</p>
+</details>
+<p>There are other ways to build our own chatbot UI. For example, we can also explore Streamlit to integrate chat history and provide options to select different local models.</p>
 
       </div>
     </section>

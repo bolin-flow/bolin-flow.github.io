@@ -1,11 +1,14 @@
 +++
 title = 'Build Own ChatGPT: A Simple How-To'
-date = 2024-08-12T16:16:00-00:00
+date = 2024-08-12T03:56:00-00:00
 draft = false
 tags = ['LLM', 'Ollama']
 showTableOfContents = true
 
 +++
+
+<sub>Updated Ollama Web UI on 2024-Aug-24</sub>
+
 
 ## Download Ollama and Run Commands
 
@@ -79,12 +82,66 @@ Download the `ollama` Python package, `import ollama`, and then view the details
 </details>
 
 
-## Custom System Prompt 
+## Build Custom System Prompt 
 
-Copy the model file into your own file called `new-modelfile`. Use `>` to copy the modelfile to the new file.
-Run command  `ollama show gemma2:2b-instruct-q4_K_M --modelfile > new-modelfile` to copy the model file of gemma2:2b-instruct-q4_K_M into a new file named new-modelfile.
+To create a new model file from an existing model, you can follow these steps. This process involves copying the model file using the `>` operator and creating `new-modelfile` using Ollama.
 
- If you ran the command in one specific directory, new-modelfile will be created in this directory. We can use the pwd command in the terminal to print the current working directory: `pwd`. We can also view the File: Use the cat command to display the contents of new-modelfile:
-`cat new-modelfile`. To code in Visual Studio Code by opening the Command Palette: Press Cmd+Shift+P.Type, and select: `Type Shell Command: Install 'code' command in PATH` and select it.
+Start by copying the modelfile into a new file named new-modelfile. You can do this by running the following command in your terminal: `ollama show gemma2:2b-instruct-q4_K_M --modelfile > new-modelfile`
+This command will extract the model file for `gemma2:2b-instruct-q4_K_M` and save it as new-modelfile in your current directory. 
 
-create a new model from a Modelfile ollama create arr-phi —-file new-modelfile
+To view the contents of the newly created new-modelfile, use the cat command:`cat new-modelfile`. To confirm where the new-modelfile has been saved, you can use the `pwd` command to print the current working directory. 
+
+<details>
+
+<summary>
+<b>How to edit modelfile in Visual Studio Code.</b>
+</summary>
+If you want to edit the model file using Visual Studio Code, start by enabling the command to open files directly from the terminal. Open the Command Palette by pressing `Cmd+Shift+P` (Mac), type Shell Command, and select Install 'code' command in PATH. Once enabled, you can open the new-modelfile by running the command: `code new-modelfile` to open this file. After opening the file, you can add a custom prompt or make other modifications to the downloaded language model.
+
+```
+pwd
+code new-modelfile
+```
+</details>
+
+
+## Run Docker Image for Ollama Web UI 
+
+We can create an environment that can execute applications consistently across different systems using Docker. Using Docker for this chatbot UI provides a stable and isolated environment, ensuring the application runs smoothly across multiple systems. It simplifies setup, encapsulates dependencies, and allows for easy deployment with a single command. Docker also enables data persistence, scalability, and enhanced security, making it an ideal choice for managing your chatbot interface efficiently.
+Here's how we can set up and run a Docker container for Ollama Web UI:
+```
+docker run -d -p 3000:8080 \
+--add-host=host.docker.internal:host-gateway \
+-v ollama-webui:/app/backend/data \
+--name ollama-webui \
+--restart always \
+ghcr.io/ollama-webui/ollama-webui:main
+```
+- docker run: Creates a new container.
+- -d: Runs the container in the background (detached mode).
+- -p 3000:8080: Maps host port 3000 to container port 8080.
+- --add-host=host.docker.internal:host-gateway: Allows the container to access services on the host machine.
+- -v: Creates a volume (ollama-webui) to persist data between sessions.
+- --name: Names the container ollama-webui for easy identification.
+- --restart always: Ensures the container restarts automatically if it stops.
+- Image: ghcr.io/ollama-webui/ollama-webui:main specifies the main branch of the Ollama Web UI container image.
+
+After running the above command, if you see the message "Unable to find image 'ghcr.io/ollama-webui/ollama-webui locally, main: Pulling from ollama-webui/ollama-webui," the image will then be downloaded. Once completed, run `docker ps` to display all running containers.
+```
+CONTAINER ID   IMAGE                                    COMMAND           CREATED         STATUS         PORTS                    NAMES
+4b7938e75eac   ghcr.io/ollama-webui/ollama-webui:main   "bash start.sh"   2 minutes ago   Up 2 minutes   0.0.0.0:3000->8080/tcp   ollama-webui
+```
+
+You can now access the web UI at http://127.0.0.1:3000/auth/. After signing up with a mock email address, you can select the locally downloaded model and start asking questions. Enjoy exploring!
+
+
+<details>
+<summary>
+<b>Sign up and interact with Ollama Web UI</b>
+</summary>
+
+![ollama_web_ui.png](ollama_web_ui.png)
+![ollama_chat_qa.png](ollama_chat_qa.png)
+</details>
+
+There are other ways to build our own chatbot UI. For example, we can also explore Streamlit to integrate chat history and provide options to select different local models.
