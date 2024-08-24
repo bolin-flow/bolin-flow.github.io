@@ -17,8 +17,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="rgb(255,255,255)" />
   
-  <title>Build Own ChatGPT: An Easy How-To &middot; Gulu 🐾 Gulu</title>
-    <meta name="title" content="Build Own ChatGPT: An Easy How-To &middot; Gulu 🐾 Gulu" />
+  <title>Build Own ChatGPT: A Simple How-To &middot; Gulu 🐾 Gulu</title>
+    <meta name="title" content="Build Own ChatGPT: A Simple How-To &middot; Gulu 🐾 Gulu" />
   
   
   
@@ -99,7 +99,7 @@
   
   <meta property="og:url" content="http://localhost:1313/developing/own_chatgpt/">
   <meta property="og:site_name" content="Gulu :paw_prints: Gulu">
-  <meta property="og:title" content="Build Own ChatGPT: An Easy How-To">
+  <meta property="og:title" content="Build Own ChatGPT: A Simple How-To">
   <meta property="og:description" content="Download Ollama and Run Commands #Ollama is a versatile tool that offers a range of language models with detailed specifications.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
@@ -111,7 +111,7 @@
 
   
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Build Own ChatGPT: An Easy How-To">
+  <meta name="twitter:title" content="Build Own ChatGPT: A Simple How-To">
   <meta name="twitter:description" content="Download Ollama and Run Commands #Ollama is a versatile tool that offers a range of language models with detailed specifications.">
 
   
@@ -120,8 +120,8 @@
     "@context": "https://schema.org",
     "@type": "Article",
     "articleSection": "Developing",
-    "name": "Build Own ChatGPT: An Easy How-To",
-    "headline": "Build Own ChatGPT: An Easy How-To",
+    "name": "Build Own ChatGPT: A Simple How-To",
+    "headline": "Build Own ChatGPT: A Simple How-To",
     
     "abstract": "Download Ollama and Run Commands #Ollama is a versatile tool that offers a range of language models with detailed specifications.",
     "inLanguage": "en",
@@ -139,7 +139,7 @@
     "keywords": ["LLM","Ollama"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "566"
+    "wordCount": "700"
   }
   </script>
 
@@ -423,7 +423,7 @@
     <header class="max-w-prose">
       
       <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-        Build Own ChatGPT: An Easy How-To
+        Build Own ChatGPT: A Simple How-To
       </h1>
       
         <div class="mb-12 mt-8 text-base text-neutral-500 print:hidden dark:text-neutral-400">
@@ -486,9 +486,10 @@
     <nav id="TableOfContents">
   <ul>
     <li><a href="#download-ollama-and-run-commands">Download Ollama and Run Commands</a></li>
-    <li><a href="#llm-sizes-types-and-quantizations">LLM Sizes, Types and Quantizations</a></li>
-    <li><a href="#view-modelfile-system-and-template">View Modelfile, System and Template</a></li>
-    <li><a href="#run-chat">Run Chat</a></li>
+    <li><a href="#llm-sizes-types-and-quantizations">LLM Sizes, Types, and Quantizations</a></li>
+    <li><a href="#view-modelfile-system-and-template">View Modelfile, System, and Template</a></li>
+    <li><a href="#run-llms-with-ollama">Run LLMs with Ollama</a></li>
+    <li><a href="#custom-system-prompt">Custom System Prompt</a></li>
   </ul>
 </nav>
   </div>
@@ -498,8 +499,8 @@
         </div>
       
       <div class="min-h-0 min-w-0 max-w-prose grow">
-        <h2 id="download-ollama-and-run-commands" class="relative group">Download Ollama and Run Commands <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#download-ollama-and-run-commands" aria-label="Anchor">#</a></span></h2><p>Ollama is a versatile tool that offers a range of language models with detailed specifications. To get started, <a href="https://ollama.com/download" target="_blank" rel="noreferrer">download Ollama</a> and explore the different models available on the Ollama website. From now, we are able to use Ollama commands in our terminals.</p>
-<p>Run <code>ollama</code>, then we are able to see available commands:
+        <h2 id="download-ollama-and-run-commands" class="relative group">Download Ollama and Run Commands <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#download-ollama-and-run-commands" aria-label="Anchor">#</a></span></h2><p>Ollama is a versatile tool that offers a range of language models with detailed specifications. To get started, <a href="https://ollama.com/download" target="_blank" rel="noreferrer">download Ollama</a> and explore the different models available on the Ollama website. Once downloaded, you can use Ollama commands in your terminal.</p>
+<p>Run <code>ollama</code> to see the available commands:
 
 
 
@@ -552,16 +553,16 @@
 
 </figure>
 </p>
-<p>Here we can find a list of llama3.1 models listed in <a href="https://ollama.com/library/llama3.1:8b-instruct-q4_K_M/blobs/11ce4ee3e170" target="_blank" rel="noreferrer">llama3.1 download page</a> There are some comparisons made fir dufferebt types of</p>
-<h2 id="llm-sizes-types-and-quantizations" class="relative group">LLM Sizes, Types and Quantizations <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#llm-sizes-types-and-quantizations" aria-label="Anchor">#</a></span></h2><p>In the context of large language models (LLMs):</p>
+<p>On the <a href="https://ollama.com/library/llama3.1:8b-instruct-q4_K_M/blobs/11ce4ee3e170" target="_blank" rel="noreferrer">llama3.1 download page</a>, you can find a list of llama3.1 models. There are also comparisons made for different types of models.</p>
+<h2 id="llm-sizes-types-and-quantizations" class="relative group">LLM Sizes, Types, and Quantizations <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#llm-sizes-types-and-quantizations" aria-label="Anchor">#</a></span></h2><p>In the context of large language models (LLMs):</p>
 <ul>
 <li>Chat: Direct conversation with the model, where the character card serves as your prompt.</li>
 <li>Instruct: A chat between &ldquo;you&rdquo; and the &ldquo;assistant,&rdquo; following the model&rsquo;s prompt format.</li>
 <li>Chat-Instruct: A conversation where you interact with a character card using the instruct template. For example, &ldquo;You are an AI playing [X character]; respond as the character would.&rdquo; This is then adapted to formats like Alpaca, Wizard, etc.</li>
 </ul>
-<p>There is no definitive &ldquo;best&rdquo; option, but for factual information, instruct mode is typically more reliable. However, instruct-chat doesn&rsquo;t necessarily improve character portrayal or produce longer responses. one may work better than the other for a particular model and prompt.</p>
-<p>For more information on model suffixes and quantization in LLMs, visit <a href="https://www.reddit.com/r/LocalLLaMA/comments/17lavtr/how_do_i_choose_the_llama_model_its_so_confusing/" target="_blank" rel="noreferrer">this page</a>. For performance statistics on different model sizes and quantizations, check <a href="https://github.com/ggerganov/llama.cpp/pull/1684#issuecomment-1579252501" target="_blank" rel="noreferrer">this comment</a></p>
-<p>Let&rsquo;s select one instruct small model and download it using ollama with this command <code>ollama run llama3.1:8b-instruct-q5_K_M</code></p>
+<p>There is no definitive &ldquo;best&rdquo; option, but for factual information, instruct mode is typically more reliable. However, instruct-chat doesn&rsquo;t necessarily improve character portrayal or produce longer responses. One may work better than the other for a particular model and prompt.</p>
+<p>For more information on model suffixes and quantization in LLMs, visit <a href="https://www.reddit.com/r/LocalLLaMA/comments/17lavtr/how_do_i_choose_the_llama_model_its_so_confusing/" target="_blank" rel="noreferrer">this page</a>. For performance statistics on different model sizes and quantizations, check <a href="https://github.com/ggerganov/llama.cpp/pull/1684#issuecomment-1579252501" target="_blank" rel="noreferrer">this comment</a>.</p>
+<p>Let&rsquo;s select one instruct small model and download it using ollama with this command: <code>ollama run llama3.1:8b-instruct-q5_K_M</code></p>
 <p>
 
 
@@ -614,7 +615,7 @@
 
 </figure>
 
-We can interact with Ollama directly using terminal.
+We can interact with Ollama directly using the terminal.
 
 
 
@@ -667,7 +668,7 @@ We can interact with Ollama directly using terminal.
 
 </figure>
 </p>
-<p>Now we can send questions directly or use curl command to interact LLM using ollama.
+<p>Now we can send questions directly or use the curl command to interact with the LLM using ollama.
 <code>curl</code> is a command-line tool used to send requests to URLs. <code>http://localhost:11434/api/generate</code> is the URL endpoint of the local server running on the machine (localhost) at port 11434. The /api/generate path indicates that this request is related to generation exposed by ollama.</p>
 <pre tabindex="0"><code>curl http://localhost:11434/api/generate -d &#39;{
 &#34;model&#34;: &#34;gemma2:2b-instruct-q4_K_M&#34;,
@@ -676,20 +677,20 @@ We can interact with Ollama directly using terminal.
 }&#39; | jq .
 </code></pre><ul>
 <li><code>d</code> stands for &ldquo;data&rdquo; we are passing and is used to send the specified data in a POST request.</li>
-<li>The data contains arguments for ollama (JSON object with three key-value pairs)</li>
+<li>The data contains arguments for ollama (JSON object with three key-value pairs).</li>
 <li>&ldquo;stream&rdquo; false means instead of streaming back one word at a time, we want everything all at once.</li>
 <li>The <code>|</code> is a pipe that takes the output of the <code>curl</code> command and passes it to another command.</li>
 <li><code>jq</code> is a command-line utility for parsing and processing JSON data. <code>.</code> tells <code>jq</code> to output the entire JSON response, formatted for easy reading.</li>
 </ul>
-<h2 id="view-modelfile-system-and-template" class="relative group">View Modelfile, System and Template <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#view-modelfile-system-and-template" aria-label="Anchor">#</a></span></h2><p>Run <code>ollama show model_name --modelfile</code> to view modelfile, relevant describtion, how the model works and where it lives.</p>
+<h2 id="view-modelfile-system-and-template" class="relative group">View Modelfile, System, and Template <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#view-modelfile-system-and-template" aria-label="Anchor">#</a></span></h2><p>Run <code>ollama show model_name --modelfile</code> to view the modelfile, relevant description, how the model works, and where it lives.</p>
 <p><code>ollama show gemma2:2b-instruct-q4_K_M --modelfile</code></p>
 <ul>
 <li>TEMPLATE: Displays the system prompt if it exists.</li>
 <li>SYSTEM: Describes the chat scenario between a user and an AI assistant.</li>
 </ul>
-<p>How to create a custom system prompt for one selected model? we need to first copy the modelfile into our own file new-modelfile. Let&rsquo;s say the model is <code>phi</code>.
-<code>ollama show phi --modelfile &gt; new-modelfile</code> here <code>&gt;</code> means copy the modelfile to a new file new-modelfile. Then modify and save this new-modelfile file with updated system prompt. Finally, create a new model from the updated modelfile using <code>ollama create new-phi —-file new-modelfile</code>. Run <code>ollama run new-phi</code> to interact with the updated model!</p>
-<h2 id="run-chat" class="relative group">Run Chat <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#run-chat" aria-label="Anchor">#</a></span></h2><p>Download to <code>import ollama</code> python package and view the details with <code>ollama.list()</code></p>
+<p>To create a custom system prompt for a selected model, first copy the modelfile into your own file called <code>new-modelfile</code>. Let&rsquo;s say the model is <code>gemma2:2b-instruct-q4_K_M</code>.
+Use the command <code>ollama show gemma2:2b-instruct-q4_K_M --modelfile &gt; new-modelfile</code> to copy the modelfile to the new file. Then modify and save this new-modelfile file with the updated system prompt. Finally, create a new model from the updated modelfile using <code>ollama create new-gemma2_2b_instruct —-file new-modelfile</code>. Run <code>ollama run gemma2_2b_instruct</code> to interact with the updated model!</p>
+<h2 id="run-llms-with-ollama" class="relative group">Run LLMs with Ollama <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#run-llms-with-ollama" aria-label="Anchor">#</a></span></h2><p>Download the <code>ollama</code> Python package, <code>import ollama</code>, and then view the details with <code>ollama.list()</code></p>
 <details>
 <summary>
 <b>Click to view model details in the list.</b>
@@ -763,6 +764,12 @@ We can interact with Ollama directly using terminal.
 </figure>
 </p>
 </details>
+<h2 id="custom-system-prompt" class="relative group">Custom System Prompt <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#custom-system-prompt" aria-label="Anchor">#</a></span></h2><p>Copy the model file into your own file called <code>new-modelfile</code>. Use <code>&gt;</code> to copy the modelfile to the new file.
+Run command  <code>ollama show gemma2:2b-instruct-q4_K_M --modelfile &gt; new-modelfile</code> to copy the model file of gemma2:2b-instruct-q4_K_M into a new file named new-modelfile.</p>
+<p>If you ran the command in one specific directory, new-modelfile will be created in this directory. We can use the pwd command in the terminal to print the current working directory: <code>pwd</code>. We can also view the File: Use the cat command to display the contents of new-modelfile:
+<code>cat new-modelfile</code>. To code in Visual Studio Code by opening the Command Palette: Press Cmd+Shift+P.Type, and select: <code>Type Shell Command: Install 'code' command in PATH</code> and select it.</p>
+<p>create a new model from a Modelfile ollama create arr-phi —-file new-modelfile</p>
+
       </div>
     </section>
     <footer class="max-w-prose pt-8 print:hidden">
