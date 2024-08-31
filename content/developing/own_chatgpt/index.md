@@ -72,13 +72,11 @@ Use the command `ollama show gemma2:2b-instruct-q4_K_M --modelfile > new-modelfi
 Download the `ollama` Python package, `import ollama`, and then view the details with `ollama.list()` 
 
 <details>
-
 <summary>
-<b>Click to view model details in the list.</b>
+<b>View model details in the list.</b>
 </summary>
 
 ![ollama_list.png](ollama_list.png)
-
 </details>
 
 
@@ -108,7 +106,12 @@ code new-modelfile
 ## Run Docker Image for Ollama Web UI 
 
 We can create an environment that can execute applications consistently across different systems using Docker. Using Docker for this chatbot UI provides a stable and isolated environment, ensuring the application runs smoothly across multiple systems. It simplifies setup, encapsulates dependencies, and allows for easy deployment with a single command. Docker also enables data persistence, scalability, and enhanced security, making it an ideal choice for managing your chatbot interface efficiently.
-Here's how we can set up and run a Docker container for Ollama Web UI:
+
+<details>
+<summary>
+<b>View to code to run a Docker container for Ollama Web UI</b>
+</summary>
+
 ```
 docker run -d -p 3000:8080 \
 --add-host=host.docker.internal:host-gateway \
@@ -125,6 +128,8 @@ ghcr.io/ollama-webui/ollama-webui:main
 - --name: Names the container ollama-webui for easy identification.
 - --restart always: Ensures the container restarts automatically if it stops.
 - Image: ghcr.io/ollama-webui/ollama-webui:main specifies the main branch of the Ollama Web UI container image.
+
+</details>
 
 After running the above command, if you see the message "Unable to find image 'ghcr.io/ollama-webui/ollama-webui locally, main: Pulling from ollama-webui/ollama-webui," the image will then be downloaded. Once completed, run `docker ps` to display all running containers.
 ```

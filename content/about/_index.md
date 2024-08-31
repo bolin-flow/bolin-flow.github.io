@@ -25,30 +25,11 @@ My name is Bolin. I'm documenting my learning notes on this website, where I sha
 <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
 <script src="/js/learn3.js"></script>
 
-
-<!-- {{< chart >}}
-type: 'bubble',
-data: {
-  labels: ['Red', 'Blue', 'Yellow'],
-  datasets: [{
-    label: 'My First Dataset',
-    data: [300, 50, 100],
-    backgroundColor: [
-      'rgba(255, 99, 132, 0.7)',
-      'rgba(54, 162, 235, 0.7)',
-      'rgba(255, 205, 86, 0.7)'
-    ],
-    borderWidth: 0,
-    hoverOffset: 4
-  }]
-}
-{{< /chart >}} -->
-
-{{< chart >}} 
+<!-- {{< chart >}} 
 type: 'bubble',
 data: {
   datasets: [{
-    label: 'First Dataset',
+    label: ' ',
     data: [{
       x: 20,
       y: 30,
@@ -61,4 +42,23 @@ data: {
     backgroundColor: 'rgb(255, 99, 132)'
   }]
 }
-{{< /chart >}}
+{{< /chart >}} -->
+
+<!-- <div style="width: 300px; height: 300px;">
+{{< chart >}}
+type: 'doughnut',
+data: {
+  labels: ['Red', 'Blue', 'Yellow'],
+  datasets: [{
+    label: 'My First Dataset',
+    data: [120, 80, 60],
+    backgroundColor: [
+      'rgba(128, 128, 128, 0.5)',
+      'rgba(169, 169, 169, 0.5)',
+      'rgba(211, 211, 211, 0.5)'
+    ],
+    borderWidth: 0,
+    hoverOffset: 4
+  }]
+}
+{{< /chart >}} -->

@@ -139,7 +139,7 @@
     "keywords": ["LLM","Ollama"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "1088"
+    "wordCount": "1083"
   }
   </script>
 
@@ -695,7 +695,7 @@ Use the command <code>ollama show gemma2:2b-instruct-q4_K_M --modelfile &gt; new
 <h2 id="run-llms-with-ollama" class="relative group">Run LLMs with Ollama <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#run-llms-with-ollama" aria-label="Anchor">#</a></span></h2><p>Download the <code>ollama</code> Python package, <code>import ollama</code>, and then view the details with <code>ollama.list()</code></p>
 <details>
 <summary>
-<b>Click to view model details in the list.</b>
+<b>View model details in the list.</b>
 </summary>
 <p>
 
@@ -778,8 +778,11 @@ If you want to edit the model file using Visual Studio Code, start by enabling t
 <pre tabindex="0"><code>pwd
 code new-modelfile
 </code></pre></details>
-<h2 id="run-docker-image-for-ollama-web-ui" class="relative group">Run Docker Image for Ollama Web UI <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#run-docker-image-for-ollama-web-ui" aria-label="Anchor">#</a></span></h2><p>We can create an environment that can execute applications consistently across different systems using Docker. Using Docker for this chatbot UI provides a stable and isolated environment, ensuring the application runs smoothly across multiple systems. It simplifies setup, encapsulates dependencies, and allows for easy deployment with a single command. Docker also enables data persistence, scalability, and enhanced security, making it an ideal choice for managing your chatbot interface efficiently.
-Here&rsquo;s how we can set up and run a Docker container for Ollama Web UI:</p>
+<h2 id="run-docker-image-for-ollama-web-ui" class="relative group">Run Docker Image for Ollama Web UI <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#run-docker-image-for-ollama-web-ui" aria-label="Anchor">#</a></span></h2><p>We can create an environment that can execute applications consistently across different systems using Docker. Using Docker for this chatbot UI provides a stable and isolated environment, ensuring the application runs smoothly across multiple systems. It simplifies setup, encapsulates dependencies, and allows for easy deployment with a single command. Docker also enables data persistence, scalability, and enhanced security, making it an ideal choice for managing your chatbot interface efficiently.</p>
+<details>
+<summary>
+<b>View to code to run a Docker container for Ollama Web UI</b>
+</summary>
 <pre tabindex="0"><code>docker run -d -p 3000:8080 \
 --add-host=host.docker.internal:host-gateway \
 -v ollama-webui:/app/backend/data \
@@ -796,6 +799,7 @@ ghcr.io/ollama-webui/ollama-webui:main
 <li>&ndash;restart always: Ensures the container restarts automatically if it stops.</li>
 <li>Image: ghcr.io/ollama-webui/ollama-webui:main specifies the main branch of the Ollama Web UI container image.</li>
 </ul>
+</details>
 <p>After running the above command, if you see the message &ldquo;Unable to find image &lsquo;ghcr.io/ollama-webui/ollama-webui locally, main: Pulling from ollama-webui/ollama-webui,&rdquo; the image will then be downloaded. Once completed, run <code>docker ps</code> to display all running containers.</p>
 <pre tabindex="0"><code>CONTAINER ID   IMAGE                                    COMMAND           CREATED         STATUS         PORTS                    NAMES
 4b7938e75eac   ghcr.io/ollama-webui/ollama-webui:main   &#34;bash start.sh&#34;   2 minutes ago   Up 2 minutes   0.0.0.0:3000-&gt;8080/tcp   ollama-webui
