@@ -17,7 +17,7 @@ The paper addresses the persistent issue of hallucination, where large language 
 
 >To minimize this issue, we designed an experiment where academics review their own educational background, work experience, and publications using their curriculum vitae. The CV serves as a best-case proxy for search results from a fully-functional RAG system.
 
-Here, The experimental method introduces a scenario involving academic CV reviews. In the experiment, CV is assumed to represent the ideal output that a fully-functional RAG system could produce. In this setup, we can eliminate the uncertainties that RAG itself could introduce, allowing for a deeper exploration of the hallucination problem in LLMs.
+The experimental method introduces a scenario involving academic CV reviews. In the experiment, CV is assumed to represent the ideal output that a fully-functional RAG system could produce. In this setup, we can eliminate the uncertainties that RAG itself could introduce, allowing for a deeper exploration of the hallucination problem in LLMs.
 
 
 ### Experiment Steps 
