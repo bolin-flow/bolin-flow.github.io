@@ -1,7 +1,7 @@
 +++
 title = "📎 Useful Links"
 date = 2022-01-25
-summary = "Personal detailed resume link."
+summary = "Useful links for reviewing or contamplations."
 showReadingTime = false
 showEdit = false
 showDate = false
@@ -9,6 +9,9 @@ showTableOfContents =  true
 showBreadcrumbs = true
 showAuthor = true
 +++
+
+## Derek Sivers Tech Blogs 
+[Learn from Derek Sivers's blogs](https://sive.rs/tech)
 
 ## Congo Config Parameters
 [Congo layout configuration parameters](https://jpanther.github.io/congo/docs/configuration/)
