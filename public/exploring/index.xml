@@ -7,14 +7,14 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>@copyright 2024 Bolin</copyright>
-    <lastBuildDate>Sat, 24 Aug 2024 19:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 31 Aug 2024 10:40:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/exploring/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Bolin Li CV</title>
-      <link>http://localhost:1313/exploring/bolin_li_cv/</link>
-      <pubDate>Sat, 24 Aug 2024 19:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/exploring/bolin_li_cv/</guid>
-      <description></description>
+      <title>Build Products using Cloud Services</title>
+      <link>http://localhost:1313/exploring/azure_cloud/</link>
+      <pubDate>Sat, 31 Aug 2024 10:40:00 +0000</pubDate>
+      <guid>http://localhost:1313/exploring/azure_cloud/</guid>
+      <description>Azure AI #</description>
     </item>
     <item>
       <title>Moving Mountains: Shan Shui in Motion</title>

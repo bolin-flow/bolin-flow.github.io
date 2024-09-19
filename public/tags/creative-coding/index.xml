@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>@copyright 2024 Bolin</copyright>
-    <lastBuildDate>Sun, 11 Aug 2024 11:11:56 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 18 Sep 2024 20:26:26 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/creative-coding/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Talk with My Documents</title>
+      <link>http://localhost:1313/developing/talk_data/</link>
+      <pubDate>Wed, 18 Sep 2024 20:26:26 +0000</pubDate>
+      <guid>http://localhost:1313/developing/talk_data/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Moving Mountains: Shan Shui in Motion</title>
       <link>http://localhost:1313/exploring/shanshui_mountains/</link>
