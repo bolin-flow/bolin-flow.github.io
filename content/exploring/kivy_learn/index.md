@@ -8,4 +8,55 @@ showTableOfContents = true
 
 +++
 
-Kivy is an open-source Python framework used for developing cross-platform applications with a natural user interface (NUI), such as touch applications and multi-touch applications. It is widely used to build applications for Android, iOS, Windows, macOS, and Linux from a single codebase.
+
+[Kivy](https://kivy.org/) is an open-source Python framework used for developing cross-platform applications on operating systems such as Android, iOS, macOS, Windows, and Linux. with a natural user interface (NUI), such as touch applications and multi-touch applications. It supports natural user interfaces (NUIs), including touch and multi-touch applications. [KivyMD](https://kivymd.readthedocs.io/en/latest/) is another library that enhances the appearance of Kivy applications by providing Material Design components and widgets. This facilitates the development process and saves time. 
+
+Install both Kivy and KivyMD before building an application. Start by creating a folder named `my-project` and open it in Visual Studio Code. After opening this project, create a file named `mainapp.py`.
+
+
+## Create main python and kv files
+
+In `mainapp.py`, first import `App` from the Kivy library. Then create a class named `MainApp` to run the application. Note that the class name `MainApp` need to match the name of the Python script. This class will be used whenever we run the application.
+
+In order to make usre `MainApp` works as we expected, we need to let it extends one parent `MDApp` class in `KivyMD`. So `Class MainApp(MDApp)` will be used for our application. 
+
+```
+from kivy.app import App
+from kivymd.app import MDApp
+
+class MainWidget():
+    pass
+
+class MainApp(MDApp):
+
+    def build(self):
+    # must have one build and return the widget class in main.kv
+    return MainWidget() # return the widget class in main.kv, we also need have one corresponding one this mainapp.py
+    
+```
+
+Create a new file with the extension `.kv`. The name of this `.kv` file must match the first part or the prefix of the class name we just created to run the application. Therefore, the `.kv` file should be named `main.kv`, and this `.kv` file is used for the user interface, while `mainapp.py` is responsible for the backend logic.
+
+After creating `main.kv` and `mainapp.py`, to enable communication between the backend logic written in Python and the UI, we need to define two functions in the main class `MainApp(MDApp)`. The first function is `build`, which actually constructs the application, and the second is `on_start`, which is executed whenever the application starts. These two functions are crucial to the application's lifecycle.
+
+The file `main.kv` will contain many widgets. Our initial step is to create the main widget <MainWidget>. In the build function, we will return this widget and simultaneously create the corresponding widget class in `mainapp.py` for the kv file. For each widget create in kv file, we need to build one corresponding widget class in the python file. 
+
+## Run one kivy application
+
+
+We can call `MainApp().run()` to run the app, but currently, `main.kv` contains nothing. We need to import a layout and extend the main widget as `MainWidget(BoxLayout)`. Open the terminal, navigate to the `my-project` directory, and run `python mainapp.py`.
+
+```
+from kivy.app import App
+from kivymd.app import MDApp
+from kivy.uix.boxlayout import BoxLayout
+
+class MainWidget(BoxLayout):
+    pass
+
+class MainApp(MDApp):
+    def build(self):
+        return MainWidget() 
+
+MainApp().run() # run the app
+```
