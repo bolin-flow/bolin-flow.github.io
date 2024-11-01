@@ -17,10 +17,10 @@
       <description>Kivy is an open-source Python framework used for developing cross-platform applications on operating systems such as Android, iOS, macOS, Windows, and Linux.</description>
     </item>
     <item>
-      <title>Chat with Your Books</title>
-      <link>http://localhost:1313/developing/chat_book/</link>
+      <title>What Are We Really Measuring in a RAG Chatbot?</title>
+      <link>http://localhost:1313/developing/rag_metrics/</link>
       <pubDate>Wed, 18 Sep 2024 20:26:26 +0000</pubDate>
-      <guid>http://localhost:1313/developing/chat_book/</guid>
+      <guid>http://localhost:1313/developing/rag_metrics/</guid>
       <description>Updated Azure functionalities on 2024-Oct-16</description>
     </item>
     <item>
