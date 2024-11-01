@@ -60,3 +60,7 @@ class MainApp(MDApp):
 
 MainApp().run() # run the app
 ```
+
+## Work on user interface using Kivy
+
+After running the App, we will see one empty application, now we can close it up and head on over to the`main.kv` for its user interface. Make sure click 'tab' for creating one child of a specific appearance.  
