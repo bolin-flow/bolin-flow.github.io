@@ -140,7 +140,7 @@
     "keywords": ["Kivy","KivyMD","App"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "519"
+    "wordCount": "892"
   }
   </script>
 
@@ -531,7 +531,92 @@ class MainApp(MDApp):
 
 MainApp().run() # run the app
 </code></pre><h2 id="work-on-user-interface-using-kivy" class="relative group">Work on user interface using Kivy <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#work-on-user-interface-using-kivy" aria-label="Anchor">#</a></span></h2><p>After running the App, we will see one empty application, now we can close it up and head on over to the<code>main.kv</code> for its user interface. Make sure click &rsquo;tab&rsquo; for creating one child of a specific appearance.</p>
+<p>To enhance the main.kv file, we need to add widgets to create a user interface using Kivy. The <MainWidge> syntax is often used in Kivy language files (.kv) to define properties and structure for a class</p>
+<ul>
+<li>Create a <code>Screen</code> widget that forms the base of the app’s interface.</li>
+<li>Add a <code>NavigationLayout</code> inside the <code>Screen</code>. The NavigationLayout widget in KivyMD is typically used for implementing a drawer navigation layout.</li>
+<li><code>ScreenManager</code> is nested within <code>NavigationLayout</code>, which suggests multiple screens will be managed by this layout.</li>
+<li>Create a custom screen class <code>HomeScreen</code> with an assigned name. Inside it, add a <code>BoxLayout</code> with a vertical orientation organizes the components in a vertical stack.</li>
+<li>Use <code>MDToolbar</code> with properties <code>title</code>, <code>elevation</code> and <code>left_action_items</code>. It will be used at the top of the screen as an app bar.
+<ul>
+<li><code>left_action_items</code> adds a menu icon on the left side of the toolbar, which can open the navigation drawer.</li>
+</ul>
+</li>
+<li>Implement <code>MDNavigationDrawer</code>, Add an <code>MDNavigationDrawer</code> at the same level as <code>ScreenManager</code> within <code>NavigationLayout</code>.
+<ul>
+<li>Assign id <code>nav_drawer</code> so it can be referenced within the <code>left_action_items</code> to toggle the drawer’s visibility.</li>
+</ul>
+</li>
+<li><code>ContentNavigationDrawer</code> widget serves as the content area for <code>MDNavigationDrawer</code>. When the navigation drawer is opened, <code>ContentNavigationDrawer</code> determines what appears inside it, like icons, text, buttons, or links.</li>
+</ul>
+<pre tabindex="0"><code>&lt;MainWidge&gt;:
+    Screen:
 
+        NavigationLayout: 
+            ScreenManager:
+                id: screen_manager
+                
+                HomeScreen: 
+                    name: &#39;home screen&#39;
+                
+                    BoxLayout: 
+                        orientation: &#39;vertical&#39;
+
+                        MDToolbar:
+                            title: &#39;My app&#39;
+                            elevation: 10
+                            left_action_items: [[&#39;menu&#39;, lambda x: nav_drawer.toggle_nav_drawer()]]  
+                        
+                    ScrollView:   
+            
+
+            MDNavigationDrawer:
+                id: nav_drawer
+
+                ContentNavigationDrawer:
+                    id: content_drawer
+                    screen_manager: screen_manager
+                    nav_drawer: nav_drawer
+</code></pre><ul>
+<li>Use angular brackets to create a new widget <code>&lt;ContentNavigationDrawer&gt;</code>. It serves as the main container for the navigation drawer&rsquo;s content.</li>
+<li><code>AnchorLayout</code> is used to position the avatar image within the <code>ContentNavigationDrawer</code>, anchored to the left.
+<ul>
+<li><code>Image</code> dsplays the avatar or logo image at the top of the navigation drawer.</li>
+</ul>
+</li>
+<li><code>ScrollView</code> allows the list of items in the navigation drawer to be scrollable if there are too many items to fit on the screen.
+<ul>
+<li><code>MDList</code> contains list items in a Material Design style, commonly used for navigation options in a drawer.</li>
+<li><code>OneLineListItem</code> displays individual menu options for navigation within the drawer.</li>
+</ul>
+</li>
+</ul>
+<pre tabindex="0"><code>&lt;ContentNavigationDrawer&gt;
+    orientation: &#39;vertical&#39;
+    padding: &#39;8dp&#39;
+    spacing: &#39;8dp&#39;
+
+    AnchorLayout:
+        anchor_x: &#39;left&#39;
+        size_hint_y: None
+        height: avatar.height
+
+        Image: 
+            id: avatar
+            size_hint: None, None
+            size: &#34;50dp&#34;, &#34;50dp&#34;
+            source: &#39;data/logo.png&#39;
+
+    ScrollView: 
+        MDList:
+
+            OneLineListItem:
+                text: &#39;Home&#39;
+            
+
+            OneLineListItem:
+                text: &#39;About us&#39;
+</code></pre>
       </div>
     </section>
     <footer class="max-w-prose pt-8 print:hidden">
