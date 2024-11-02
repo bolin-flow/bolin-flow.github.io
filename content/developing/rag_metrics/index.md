@@ -1,13 +1,19 @@
 +++
-title = 'Chat with Your Books'
+title = 'What Are We Really Measuring in a RAG Chatbot?'
 date = 2024-09-18T20:26:26-00:00
 draft = false
 tags = ['Information Retrieval', 'LLM', 'RAG']
-showTableOfContents = false
+showTableOfContents = true
 
 +++
-
 <sub>Updated Azure functionalities on 2024-Oct-16</sub>
+
+
+
+## 
+
+
+## Azure Cloud Services 
 
  I've always been curious about interacting with books and documents in a way that deepens my understanding. I want to read in a dynamic, interactive way that sparks new insights and encourages deeper contemplation. I wish there were more visuals, thought-provoking questions, and summarized topics or keywords for each section to help readers comprehend and distill what they read. I also want to control over how the content is organized and navigated, allowing me to make notes or understand it more easily—especially when reading something in my second language.
 

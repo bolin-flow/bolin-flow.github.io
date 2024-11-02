@@ -17,8 +17,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="rgb(255,255,255)" />
   
-  <title>Build Own ChatGPT: A Simple How-To &middot; Gulu 🐾 Gulu</title>
-    <meta name="title" content="Build Own ChatGPT: A Simple How-To &middot; Gulu 🐾 Gulu" />
+  <title>What Are We Really Measuring in a RAG Chatbot? &middot; Gulu 🐾 Gulu</title>
+    <meta name="title" content="What Are We Really Measuring in a RAG Chatbot? &middot; Gulu 🐾 Gulu" />
   
   
   
@@ -75,14 +75,14 @@
     name="description"
     content="
       
-        Updated Ollama Web UI on 2024-Aug-24
+        Updated Azure functionalities on 2024-Oct-16
       
     "
   />
   
   
   
-  <link rel="canonical" href="http://localhost:1313/developing/own_chatgpt/" />
+  <link rel="canonical" href="http://localhost:1313/developing/rag_metrics/" />
   
   
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
@@ -97,22 +97,23 @@
   
   
   
-  <meta property="og:url" content="http://localhost:1313/developing/own_chatgpt/">
+  <meta property="og:url" content="http://localhost:1313/developing/rag_metrics/">
   <meta property="og:site_name" content="Gulu :paw_prints: Gulu">
-  <meta property="og:title" content="Build Own ChatGPT: A Simple How-To">
-  <meta property="og:description" content="Updated Ollama Web UI on 2024-Aug-24">
+  <meta property="og:title" content="What Are We Really Measuring in a RAG Chatbot?">
+  <meta property="og:description" content="Updated Azure functionalities on 2024-Oct-16">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="developing">
-    <meta property="article:published_time" content="2024-08-12T03:56:00+00:00">
-    <meta property="article:modified_time" content="2024-08-12T03:56:00+00:00">
+    <meta property="article:published_time" content="2024-09-18T20:26:26+00:00">
+    <meta property="article:modified_time" content="2024-09-18T20:26:26+00:00">
+    <meta property="article:tag" content="Information Retrieval">
     <meta property="article:tag" content="LLM">
-    <meta property="article:tag" content="Ollama">
+    <meta property="article:tag" content="RAG">
 
   
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Build Own ChatGPT: A Simple How-To">
-  <meta name="twitter:description" content="Updated Ollama Web UI on 2024-Aug-24">
+  <meta name="twitter:title" content="What Are We Really Measuring in a RAG Chatbot?">
+  <meta name="twitter:description" content="Updated Azure functionalities on 2024-Oct-16">
 
   
   <script type="application/ld+json">
@@ -120,26 +121,26 @@
     "@context": "https://schema.org",
     "@type": "Article",
     "articleSection": "Developing",
-    "name": "Build Own ChatGPT: A Simple How-To",
-    "headline": "Build Own ChatGPT: A Simple How-To",
+    "name": "What Are We Really Measuring in a RAG Chatbot?",
+    "headline": "What Are We Really Measuring in a RAG Chatbot?",
     
-    "abstract": "Updated Ollama Web UI on 2024-Aug-24",
+    "abstract": "Updated Azure functionalities on 2024-Oct-16",
     "inLanguage": "en",
-    "url" : "http:\/\/localhost:1313\/developing\/own_chatgpt\/",
+    "url" : "http:\/\/localhost:1313\/developing\/rag_metrics\/",
     "author" : {
       "@type": "Person",
       "name": "Bolin Li"
     },
     "copyrightYear": "2024",
-    "dateCreated": "2024-08-12T03:56:00\u002b00:00",
-    "datePublished": "2024-08-12T03:56:00\u002b00:00",
+    "dateCreated": "2024-09-18T20:26:26\u002b00:00",
+    "datePublished": "2024-09-18T20:26:26\u002b00:00",
     
-    "dateModified": "2024-08-12T03:56:00\u002b00:00",
+    "dateModified": "2024-09-18T20:26:26\u002b00:00",
     
-    "keywords": ["LLM","Ollama"],
+    "keywords": ["Information Retrieval","LLM","RAG"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "1083"
+    "wordCount": "233"
   }
   </script>
 
@@ -423,7 +424,7 @@
     <header class="max-w-prose">
       
       <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-        Build Own ChatGPT: A Simple How-To
+        What Are We Really Measuring in a RAG Chatbot?
       </h1>
       
         <div class="mb-12 mt-8 text-base text-neutral-500 print:hidden dark:text-neutral-400">
@@ -457,7 +458,7 @@
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <time datetime="2024-08-12 03:56:00 &#43;0000 UTC">12 August 2024</time>
+      <time datetime="2024-09-18 20:26:26 &#43;0000 UTC">18 September 2024</time>
     
 
     
@@ -485,12 +486,8 @@
   <div class="border-s border-dotted border-neutral-300 py-2 ps-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#download-ollama-and-run-commands">Download Ollama and Run Commands</a></li>
-    <li><a href="#llm-sizes-types-and-quantizations">LLM Sizes, Types, and Quantizations</a></li>
-    <li><a href="#view-modelfile-system-and-template">View Modelfile, System, and Template</a></li>
-    <li><a href="#run-llms-with-ollama">Run LLMs with Ollama</a></li>
-    <li><a href="#build-custom-system-prompt">Build Custom System Prompt</a></li>
-    <li><a href="#run-docker-image-for-ollama-web-ui">Run Docker Image for Ollama Web UI</a></li>
+    <li><a href="#heading"></a></li>
+    <li><a href="#azure-cloud-services">Azure Cloud Services</a></li>
   </ul>
 </nav>
   </div>
@@ -500,444 +497,9 @@
         </div>
       
       <div class="min-h-0 min-w-0 max-w-prose grow">
-        <p><sub>Updated Ollama Web UI on 2024-Aug-24</sub></p>
-<h2 id="download-ollama-and-run-commands" class="relative group">Download Ollama and Run Commands <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#download-ollama-and-run-commands" aria-label="Anchor">#</a></span></h2><p>Ollama is a versatile tool that offers a range of language models with detailed specifications. To get started, <a href="https://ollama.com/download" target="_blank" rel="noreferrer">download Ollama</a> and explore the different models available on the Ollama website. Once downloaded, you can use Ollama commands in your terminal.</p>
-<p>Run <code>ollama</code> to see the available commands:
-
-
-
-
-
-
-<figure>
-    
-    
-
-
-
-
-
-
-
-
-  
-    <picture
-      class="mx-auto my-0 rounded-md"
-      
-    >
-      
-      
-      
-      
-        <source
-          
-            
-              srcset="/developing/own_chatgpt/ollama_command_hubc4849ab8d0aba774c172f7dc695d41b_27701_476x308_resize_q75_h2_box_3.webp"
-            
-          
-          sizes="100vw"
-          type="image/webp"
-        />
-      
-      <img
-        width="476"
-        height="308"
-        class="mx-auto my-0 rounded-md"
-        alt="ollama_command.png"
-        loading="lazy" decoding="async"
-        
-          src="/developing/own_chatgpt/ollama_command.png"
-        
-      />
-    </picture>
-  
-
-
-</figure>
-</p>
-<p>On the <a href="https://ollama.com/library/llama3.1:8b-instruct-q4_K_M/blobs/11ce4ee3e170" target="_blank" rel="noreferrer">llama3.1 download page</a>, you can find a list of llama3.1 models. There are also comparisons made for different types of models.</p>
-<h2 id="llm-sizes-types-and-quantizations" class="relative group">LLM Sizes, Types, and Quantizations <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#llm-sizes-types-and-quantizations" aria-label="Anchor">#</a></span></h2><p>In the context of large language models (LLMs):</p>
-<ul>
-<li>Chat: Direct conversation with the model, where the character card serves as your prompt.</li>
-<li>Instruct: A chat between &ldquo;you&rdquo; and the &ldquo;assistant,&rdquo; following the model&rsquo;s prompt format.</li>
-<li>Chat-Instruct: A conversation where you interact with a character card using the instruct template. For example, &ldquo;You are an AI playing [X character]; respond as the character would.&rdquo; This is then adapted to formats like Alpaca, Wizard, etc.</li>
-</ul>
-<p>There is no definitive &ldquo;best&rdquo; option, but for factual information, instruct mode is typically more reliable. However, instruct-chat doesn&rsquo;t necessarily improve character portrayal or produce longer responses. One may work better than the other for a particular model and prompt.</p>
-<p>For more information on model suffixes and quantization in LLMs, visit <a href="https://www.reddit.com/r/LocalLLaMA/comments/17lavtr/how_do_i_choose_the_llama_model_its_so_confusing/" target="_blank" rel="noreferrer">this page</a>. For performance statistics on different model sizes and quantizations, check <a href="https://github.com/ggerganov/llama.cpp/pull/1684#issuecomment-1579252501" target="_blank" rel="noreferrer">this comment</a>.</p>
-<p>Let&rsquo;s select one instruct small model and download it using ollama with this command: <code>ollama run llama3.1:8b-instruct-q5_K_M</code></p>
-<p>
-
-
-
-
-
-<figure>
-    
-    
-
-
-
-
-
-
-
-
-  
-    <picture
-      class="mx-auto my-0 rounded-md"
-      
-    >
-      
-      
-      
-      
-        <source
-          
-            
-              srcset="/developing/own_chatgpt/download_llama3_model_hub62c456744a5107ae532bffa8cbdb3bb_19971_484x153_resize_q75_h2_box_3.webp"
-            
-          
-          sizes="100vw"
-          type="image/webp"
-        />
-      
-      <img
-        width="484"
-        height="153"
-        class="mx-auto my-0 rounded-md"
-        alt="download_llama3_model.png"
-        loading="lazy" decoding="async"
-        
-          src="/developing/own_chatgpt/download_llama3_model.png"
-        
-      />
-    </picture>
-  
-
-
-</figure>
-
-We can interact with Ollama directly using the terminal.
-
-
-
-
-
-
-<figure>
-    
-    
-
-
-
-
-
-
-
-
-  
-    <picture
-      class="mx-auto my-0 rounded-md"
-      
-    >
-      
-      
-      
-      
-        <source
-          
-            
-              srcset="/developing/own_chatgpt/commands_llama3_model_hua8c8c8d021f114a43536a1ee2ee3e049_17645_330x170_resize_q75_h2_box_3.webp"
-            
-          
-          sizes="100vw"
-          type="image/webp"
-        />
-      
-      <img
-        width="330"
-        height="170"
-        class="mx-auto my-0 rounded-md"
-        alt="commands_llama3_model.png"
-        loading="lazy" decoding="async"
-        
-          src="/developing/own_chatgpt/commands_llama3_model.png"
-        
-      />
-    </picture>
-  
-
-
-</figure>
-</p>
-<p>Now we can send questions directly or use the curl command to interact with the LLM using ollama.
-<code>curl</code> is a command-line tool used to send requests to URLs. <code>http://localhost:11434/api/generate</code> is the URL endpoint of the local server running on the machine (localhost) at port 11434. The /api/generate path indicates that this request is related to generation exposed by ollama.</p>
-<pre tabindex="0"><code>curl http://localhost:11434/api/generate -d &#39;{
-&#34;model&#34;: &#34;gemma2:2b-instruct-q4_K_M&#34;,
-&#34;prompt&#34;: &#34;what is water made of?&#34;,
-&#34;stream&#34;: false
-}&#39; | jq .
-</code></pre><ul>
-<li><code>d</code> stands for &ldquo;data&rdquo; we are passing and is used to send the specified data in a POST request.</li>
-<li>The data contains arguments for ollama (JSON object with three key-value pairs).</li>
-<li>&ldquo;stream&rdquo; false means instead of streaming back one word at a time, we want everything all at once.</li>
-<li>The <code>|</code> is a pipe that takes the output of the <code>curl</code> command and passes it to another command.</li>
-<li><code>jq</code> is a command-line utility for parsing and processing JSON data. <code>.</code> tells <code>jq</code> to output the entire JSON response, formatted for easy reading.</li>
-</ul>
-<h2 id="view-modelfile-system-and-template" class="relative group">View Modelfile, System, and Template <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#view-modelfile-system-and-template" aria-label="Anchor">#</a></span></h2><p>Run <code>ollama show model_name --modelfile</code> to view the modelfile, relevant description, how the model works, and where it lives.</p>
-<p><code>ollama show gemma2:2b-instruct-q4_K_M --modelfile</code></p>
-<ul>
-<li>TEMPLATE: Displays the system prompt if it exists.</li>
-<li>SYSTEM: Describes the chat scenario between a user and an AI assistant.</li>
-</ul>
-<p>To create a custom system prompt for a selected model, first copy the modelfile into your own file called <code>new-modelfile</code>. Let&rsquo;s say the model is <code>gemma2:2b-instruct-q4_K_M</code>.
-Use the command <code>ollama show gemma2:2b-instruct-q4_K_M --modelfile &gt; new-modelfile</code> to copy the modelfile to the new file. Then modify and save this new-modelfile file with the updated system prompt. Finally, create a new model from the updated modelfile using <code>ollama create new-gemma2_2b_instruct —-file new-modelfile</code>. Run <code>ollama run gemma2_2b_instruct</code> to interact with the updated model!</p>
-<h2 id="run-llms-with-ollama" class="relative group">Run LLMs with Ollama <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#run-llms-with-ollama" aria-label="Anchor">#</a></span></h2><p>Download the <code>ollama</code> Python package, <code>import ollama</code>, and then view the details with <code>ollama.list()</code></p>
-<details>
-<summary>
-<b>View model details in the list.</b>
-</summary>
-<p>
-
-
-
-
-
-<figure>
-    
-    
-
-
-
-
-
-
-
-
-  
-    <picture
-      class="mx-auto my-0 rounded-md"
-      
-    >
-      
-      
-      
-      
-        <source
-          
-            srcset="/developing/own_chatgpt/ollama_list_huf657eef5a1fd16ffd8dd1b75f1da5ada_153640_330x0_resize_q75_h2_box_3.webp 330w,/developing/own_chatgpt/ollama_list_huf657eef5a1fd16ffd8dd1b75f1da5ada_153640_660x0_resize_q75_h2_box_3.webp 660w
-            
-              
-                ,/developing/own_chatgpt/ollama_list_huf657eef5a1fd16ffd8dd1b75f1da5ada_153640_884x916_resize_q75_h2_box_3.webp 884w
-              
-            
-            
-              
-                ,/developing/own_chatgpt/ollama_list_huf657eef5a1fd16ffd8dd1b75f1da5ada_153640_884x916_resize_q75_h2_box_3.webp 884w
-              
-            "
-          
-          sizes="100vw"
-          type="image/webp"
-        />
-      
-      <img
-        width="884"
-        height="916"
-        class="mx-auto my-0 rounded-md"
-        alt="ollama_list.png"
-        loading="lazy" decoding="async"
-        
-          src="/developing/own_chatgpt/ollama_list_huf657eef5a1fd16ffd8dd1b75f1da5ada_153640_660x0_resize_box_3.png"
-          srcset="/developing/own_chatgpt/ollama_list_huf657eef5a1fd16ffd8dd1b75f1da5ada_153640_330x0_resize_box_3.png 330w,/developing/own_chatgpt/ollama_list_huf657eef5a1fd16ffd8dd1b75f1da5ada_153640_660x0_resize_box_3.png 660w
-          
-            ,/developing/own_chatgpt/ollama_list.png 884w
-          
-          
-            ,/developing/own_chatgpt/ollama_list.png 884w
-          "
-          sizes="100vw"
-        
-      />
-    </picture>
-  
-
-
-</figure>
-</p>
-</details>
-<h2 id="build-custom-system-prompt" class="relative group">Build Custom System Prompt <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#build-custom-system-prompt" aria-label="Anchor">#</a></span></h2><p>To create a new model file from an existing model, you can follow these steps. This process involves copying the model file using the <code>&gt;</code> operator and creating <code>new-modelfile</code> using Ollama.</p>
-<p>Start by copying the modelfile into a new file named new-modelfile. You can do this by running the following command in your terminal: <code>ollama show gemma2:2b-instruct-q4_K_M --modelfile &gt; new-modelfile</code>
-This command will extract the model file for <code>gemma2:2b-instruct-q4_K_M</code> and save it as new-modelfile in your current directory.</p>
-<p>To view the contents of the newly created new-modelfile, use the cat command:<code>cat new-modelfile</code>. To confirm where the new-modelfile has been saved, you can use the <code>pwd</code> command to print the current working directory.</p>
-<details>
-<summary>
-<b>How to edit modelfile in Visual Studio Code.</b>
-</summary>
-If you want to edit the model file using Visual Studio Code, start by enabling the command to open files directly from the terminal. Open the Command Palette by pressing `Cmd+Shift+P` (Mac), type Shell Command, and select Install 'code' command in PATH. Once enabled, you can open the new-modelfile by running the command: `code new-modelfile` to open this file. After opening the file, you can add a custom prompt or make other modifications to the downloaded language model.
-<pre tabindex="0"><code>pwd
-code new-modelfile
-</code></pre></details>
-<h2 id="run-docker-image-for-ollama-web-ui" class="relative group">Run Docker Image for Ollama Web UI <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#run-docker-image-for-ollama-web-ui" aria-label="Anchor">#</a></span></h2><p>We can create an environment that can execute applications consistently across different systems using Docker. Using Docker for this chatbot UI provides a stable and isolated environment, ensuring the application runs smoothly across multiple systems. It simplifies setup, encapsulates dependencies, and allows for easy deployment with a single command. Docker also enables data persistence, scalability, and enhanced security, making it an ideal choice for managing your chatbot interface efficiently.</p>
-<details>
-<summary>
-<b>View to code to run a Docker container for Ollama Web UI</b>
-</summary>
-<pre tabindex="0"><code>docker run -d -p 3000:8080 \
---add-host=host.docker.internal:host-gateway \
--v ollama-webui:/app/backend/data \
---name ollama-webui \
---restart always \
-ghcr.io/ollama-webui/ollama-webui:main
-</code></pre><ul>
-<li>docker run: Creates a new container.</li>
-<li>-d: Runs the container in the background (detached mode).</li>
-<li>-p 3000:8080: Maps host port 3000 to container port 8080.</li>
-<li>&ndash;add-host=host.docker.internal:host-gateway: Allows the container to access services on the host machine.</li>
-<li>-v: Creates a volume (ollama-webui) to persist data between sessions.</li>
-<li>&ndash;name: Names the container ollama-webui for easy identification.</li>
-<li>&ndash;restart always: Ensures the container restarts automatically if it stops.</li>
-<li>Image: ghcr.io/ollama-webui/ollama-webui:main specifies the main branch of the Ollama Web UI container image.</li>
-</ul>
-</details>
-<p>After running the above command, if you see the message &ldquo;Unable to find image &lsquo;ghcr.io/ollama-webui/ollama-webui locally, main: Pulling from ollama-webui/ollama-webui,&rdquo; the image will then be downloaded. Once completed, run <code>docker ps</code> to display all running containers.</p>
-<pre tabindex="0"><code>CONTAINER ID   IMAGE                                    COMMAND           CREATED         STATUS         PORTS                    NAMES
-4b7938e75eac   ghcr.io/ollama-webui/ollama-webui:main   &#34;bash start.sh&#34;   2 minutes ago   Up 2 minutes   0.0.0.0:3000-&gt;8080/tcp   ollama-webui
-</code></pre><p>You can now access the web UI at http://127.0.0.1:3000/auth/. After signing up with a mock email address, you can select the locally downloaded model and start asking questions. Enjoy exploring!</p>
-<details>
-<summary>
-<b>Sign up and interact with Ollama Web UI</b>
-</summary>
-<p>
-
-
-
-
-
-<figure>
-    
-    
-
-
-
-
-
-
-
-
-  
-    <picture
-      class="mx-auto my-0 rounded-md"
-      
-    >
-      
-      
-      
-      
-        <source
-          
-            srcset="/developing/own_chatgpt/ollama_web_ui_hue4589592dc2de99de715db983f5aa847_172334_330x0_resize_q75_h2_box_3.webp 330w,/developing/own_chatgpt/ollama_web_ui_hue4589592dc2de99de715db983f5aa847_172334_660x0_resize_q75_h2_box_3.webp 660w
-            
-              ,/developing/own_chatgpt/ollama_web_ui_hue4589592dc2de99de715db983f5aa847_172334_1024x0_resize_q75_h2_box_3.webp 1024w
-            
-            
-              ,/developing/own_chatgpt/ollama_web_ui_hue4589592dc2de99de715db983f5aa847_172334_1320x0_resize_q75_h2_box_3.webp 1320w
-            "
-          
-          sizes="100vw"
-          type="image/webp"
-        />
-      
-      <img
-        width="1526"
-        height="1382"
-        class="mx-auto my-0 rounded-md"
-        alt="ollama_web_ui.png"
-        loading="lazy" decoding="async"
-        
-          src="/developing/own_chatgpt/ollama_web_ui_hue4589592dc2de99de715db983f5aa847_172334_660x0_resize_box_3.png"
-          srcset="/developing/own_chatgpt/ollama_web_ui_hue4589592dc2de99de715db983f5aa847_172334_330x0_resize_box_3.png 330w,/developing/own_chatgpt/ollama_web_ui_hue4589592dc2de99de715db983f5aa847_172334_660x0_resize_box_3.png 660w
-          
-            ,/developing/own_chatgpt/ollama_web_ui_hue4589592dc2de99de715db983f5aa847_172334_1024x0_resize_box_3.png 1024w
-          
-          
-            ,/developing/own_chatgpt/ollama_web_ui_hue4589592dc2de99de715db983f5aa847_172334_1320x0_resize_box_3.png 1320w
-          "
-          sizes="100vw"
-        
-      />
-    </picture>
-  
-
-
-</figure>
-
-
-
-
-
-
-
-<figure>
-    
-    
-
-
-
-
-
-
-
-
-  
-    <picture
-      class="mx-auto my-0 rounded-md"
-      
-    >
-      
-      
-      
-      
-        <source
-          
-            srcset="/developing/own_chatgpt/ollama_chat_qa_hu712b6e005ccb39edca1f67a9cc4a1089_182782_330x0_resize_q75_h2_box_3.webp 330w,/developing/own_chatgpt/ollama_chat_qa_hu712b6e005ccb39edca1f67a9cc4a1089_182782_660x0_resize_q75_h2_box_3.webp 660w
-            
-              ,/developing/own_chatgpt/ollama_chat_qa_hu712b6e005ccb39edca1f67a9cc4a1089_182782_1024x0_resize_q75_h2_box_3.webp 1024w
-            
-            
-              ,/developing/own_chatgpt/ollama_chat_qa_hu712b6e005ccb39edca1f67a9cc4a1089_182782_1320x0_resize_q75_h2_box_3.webp 1320w
-            "
-          
-          sizes="100vw"
-          type="image/webp"
-        />
-      
-      <img
-        width="1434"
-        height="948"
-        class="mx-auto my-0 rounded-md"
-        alt="ollama_chat_qa.png"
-        loading="lazy" decoding="async"
-        
-          src="/developing/own_chatgpt/ollama_chat_qa_hu712b6e005ccb39edca1f67a9cc4a1089_182782_660x0_resize_box_3.png"
-          srcset="/developing/own_chatgpt/ollama_chat_qa_hu712b6e005ccb39edca1f67a9cc4a1089_182782_330x0_resize_box_3.png 330w,/developing/own_chatgpt/ollama_chat_qa_hu712b6e005ccb39edca1f67a9cc4a1089_182782_660x0_resize_box_3.png 660w
-          
-            ,/developing/own_chatgpt/ollama_chat_qa_hu712b6e005ccb39edca1f67a9cc4a1089_182782_1024x0_resize_box_3.png 1024w
-          
-          
-            ,/developing/own_chatgpt/ollama_chat_qa_hu712b6e005ccb39edca1f67a9cc4a1089_182782_1320x0_resize_box_3.png 1320w
-          "
-          sizes="100vw"
-        
-      />
-    </picture>
-  
-
-
-</figure>
-</p>
-</details>
-<p>There are other ways to build our own chatbot UI. For example, we can also explore Streamlit to integrate chat history and provide options to select different local models.</p>
+        <p><sub>Updated Azure functionalities on 2024-Oct-16</sub></p>
+<h2 id="heading" class="relative group"> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#heading" aria-label="Anchor">#</a></span></h2><h2 id="azure-cloud-services" class="relative group">Azure Cloud Services <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#azure-cloud-services" aria-label="Anchor">#</a></span></h2><p>I&rsquo;ve always been curious about interacting with books and documents in a way that deepens my understanding. I want to read in a dynamic, interactive way that sparks new insights and encourages deeper contemplation. I wish there were more visuals, thought-provoking questions, and summarized topics or keywords for each section to help readers comprehend and distill what they read. I also want to control over how the content is organized and navigated, allowing me to make notes or understand it more easily—especially when reading something in my second language.</p>
+<p>There are numerous tools available to build these functionalities. For instance, we can parse and split large documents, generate interactive responses using LLMs and embedding models, and utilize various information retrieval techniques. For each text chunk, we can also extract keywords using pretrained BERT models or apply clustering to derive relevant topics from the data. While these tools and methods exist, one challenge lies in cohesively integrating these functionalities to create a smooth user experience with the application. Moreover, when policy constraints are involved, we must ensure secure hosting and proper evaluation of models and datasets, especially for unsupervised learning algorithms, generative models, and datasets containing PII. In this article, I focus on exploring cloud-based solutions, as they provide hosting, monitoring, and evaluation capabilities within one platform, streamlining the security compliance process under a single provider.</p>
 
       </div>
     </section>
@@ -956,7 +518,7 @@ ghcr.io/ollama-webui/ollama-webui:main
       <div class="flex justify-between pt-3">
         <span>
           
-            <a class="group flex" href="/developing/interactive_visual/">
+            <a class="group flex" href="/developing/own_chatgpt/">
               <span
                 class="me-2 text-neutral-700 transition-transform group-hover:-translate-x-[2px] group-hover:text-primary-600 dark:text-neutral dark:group-hover:text-primary-400"
                 ><span class="ltr:inline rtl:hidden">&larr;</span
@@ -965,11 +527,11 @@ ghcr.io/ollama-webui/ollama-webui:main
               <span class="flex flex-col">
                 <span
                   class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >Integrate Interactive Visuals to Hugo Webpage</span
+                  >Build Own ChatGPT: A Simple How-To</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   
-                    <time datetime="2024-07-02 12:16:56 -0400 EDT">2 July 2024</time>
+                    <time datetime="2024-08-12 03:56:00 &#43;0000 UTC">12 August 2024</time>
                   
                 </span>
               </span>
@@ -977,25 +539,6 @@ ghcr.io/ollama-webui/ollama-webui:main
           
         </span>
         <span>
-          
-            <a class="group flex text-right" href="/developing/rag_metrics/">
-              <span class="flex flex-col">
-                <span
-                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >What Are We Really Measuring in a RAG Chatbot?</span
-                >
-                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
-                  
-                    <time datetime="2024-09-18 20:26:26 &#43;0000 UTC">18 September 2024</time>
-                  
-                </span>
-              </span>
-              <span
-                class="ms-2 text-neutral-700 transition-transform group-hover:-translate-x-[2px] group-hover:text-primary-600 dark:text-neutral dark:group-hover:text-primary-400"
-                ><span class="ltr:inline rtl:hidden">&rarr;</span
-                ><span class="ltr:hidden rtl:inline">&larr;</span></span
-              >
-            </a>
           
         </span>
       </div>
