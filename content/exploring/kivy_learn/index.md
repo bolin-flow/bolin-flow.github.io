@@ -2,7 +2,7 @@
 title = 'Explore Kivy for Cross-platform Applications'
 date = 2024-10-30T08:10:00-00:00
 draft = false
-tags = ['Kivy', 'KivyMD', 'App']
+tags = ['Kivy', 'App']
 showReadingTime = false
 showTableOfContents = true
 

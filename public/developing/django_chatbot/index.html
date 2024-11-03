@@ -139,7 +139,7 @@
     "keywords": ["Django","Web"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "197"
+    "wordCount": "833"
   }
   </script>
 
@@ -474,6 +474,29 @@
     </header>
     <section class="prose mt-0 flex max-w-full flex-col dark:prose-invert lg:flex-row">
       
+        <div class="order-first px-0 lg:order-last lg:max-w-xs lg:ps-8">
+          <div class="toc pe-5 print:hidden lg:sticky lg:top-10">
+            <details open class="-ms-5 mt-0 overflow-hidden rounded-lg ps-5">
+  <summary
+    class="block cursor-pointer bg-neutral-100 py-1 ps-5 text-lg font-semibold text-neutral-800 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden"
+  >
+    Table of Contents
+  </summary>
+  <div class="border-s border-dotted border-neutral-300 py-2 ps-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#create-urls-for-new-app">Create urls for new app</a></li>
+    <li><a href="#build-view-function-for-new-url">Build view function for new url</a></li>
+    <li><a href="#build-view-functions-for-displaying">Build view functions for displaying</a></li>
+    <li><a href="#leverage-html-and-css">Leverage HTML and CSS</a></li>
+  </ul>
+</nav>
+  </div>
+</details>
+
+          </div>
+        </div>
+      
       <div class="min-h-0 min-w-0 max-w-prose grow">
         <p>Download <code>Django</code> and use it to build a web application with chat functionality. Start by creating a folder named <code>my_project</code> by running the command <code>django-admin startproject my_project</code>. Once we run this command, Django will generate a new folder named my_project, setting up the essential files and structure needed to begin development.</p>
 <p>In a Django project, we can have multiple apps, each with a specific purpose. These apps should be related to each other in a way that supports the overall functionality of the project. Type <code>python manage.py startapp blog</code> to build one app called blog.</p>
@@ -485,6 +508,124 @@
 <li>Migrations: These files handle database changes, allowing us to create and modify database structures as the models evolve.</li>
 </ul>
 <p>To run the Django project, execute <code>python manage.py runserver</code> in the terminal:</p>
+<h2 id="create-urls-for-new-app" class="relative group">Create urls for new app <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#create-urls-for-new-app" aria-label="Anchor">#</a></span></h2><p>Create urls.py in the blog App Directory. Remember to import views from the <code>views.py</code> in the current directory. The name of the first url is &lsquo;index&rsquo;. The first parameter, <code>''</code>, is an empty string, meaning this pattern matches the &ldquo;root&rdquo; URL for the app.</p>
+<p><code>views.index</code> refers to a view function named index in the views.py file of the current blog app. The index function defines what should be displayed when a user visits the app&rsquo;s root URL. For example, it might return an HTML template or JSON data.</p>
+<p>The name parameter or <code>name='index'</code> is a unique name for this URL pattern. It&rsquo;s used to refer to this path in templates and other parts of the code. We can use this name to generate URLs within Django templates like <code>{% url 'index' %}</code>.</p>
+<pre tabindex="0"><code># blog/urls.py
+from django.urls import path
+from . import views
+
+urlpatterns = [
+    path(&#39;&#39;, views.index, name=&#39;index&#39;),
+]
+</code></pre><p>Then we need to tell our project or main app that we have this new url in urls.py of app blog. Open urls.py file in main project folder my_project. If we set this app&rsquo;s URL pattern as <code>path('blog/', include('blog.urls'))</code> in the <strong>main urls.py</strong>, then this empty string&rsquo;&rsquo; will match <code>yourwebsite.com/blog/</code>.</p>
+<pre tabindex="0"><code># my_project/urls.py
+from django.contrib import admin
+from django.urls import path, include 
+
+urlpatterns = [
+    path(&#39;admin/&#39;, admin.site.urls),
+    path(&#39;blog/&#39;, include(&#39;blog.urls&#39;)) # add path tp the main urls.py, include blog app urls.py
+]
+</code></pre><h2 id="build-view-function-for-new-url" class="relative group">Build view function for new url <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#build-view-function-for-new-url" aria-label="Anchor">#</a></span></h2><p>If we open views.py in blog folder, there is nothing here now. We want to create this index function so it can be called in blog/urls.py file.</p>
+<pre tabindex="0"><code># blog/views.py
+def index(request):
+    # use HttpResponse to return something first 
+    return HttpResponse(&#34;This is my first url&#34;)
+</code></pre><p>The first url can be found in <code>my_project/urls.py</code> and <code>blog/urls.py</code>. The index function built in <code>blog/views.py</code> is called in <code>blog/urls.py</code>.View the display on <code>http://127.0.0.1:8000/blog/</code>:
+
+
+
+
+
+
+<figure>
+    
+    
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mx-auto my-0 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            
+              srcset="/developing/django_chatbot/first_url_hu53ee5d761c7881d61658ff05049e7f89_38664_420x150_resize_q75_h2_box_3.webp"
+            
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="420"
+        height="150"
+        class="mx-auto my-0 rounded-md"
+        alt="first_url.png"
+        loading="lazy" decoding="async"
+        
+          src="/developing/django_chatbot/first_url.png"
+        
+      />
+    </picture>
+  
+
+
+</figure>
+</p>
+<p>To define a new URL in Django, follow these steps:</p>
+<ul>
+<li>Add a URL in the Main urls.py: in <code>my_project/urls.py</code>, add a new URL pattern inside the urlpatterns list.
+<ul>
+<li>Whenever a new app is created, you should also include its URLs here to make them accessible in the main project.</li>
+</ul>
+</li>
+<li>Define URLs in the App&rsquo;s urls.py: Go to the urls.py file in the specific app folder.create one or more URL patterns within the urlpatterns list specifically for that app.
+<ul>
+<li>If the path string is empty (&rsquo;&rsquo;), it represents the root URL for that app.</li>
+<li>If the path string is set to something like &lsquo;specific&rsquo;, you can access it through root_path/specific/.</li>
+</ul>
+</li>
+<li>Create a view function in app_folder/views.py to handle requests for the new page associated with the newly created URL.
+<ul>
+<li>This function can return a string, number, list, or other data types.</li>
+</ul>
+</li>
+</ul>
+ <img src="specific_url.png" width="60%">
+<h2 id="build-view-functions-for-displaying" class="relative group">Build view functions for displaying <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#build-view-functions-for-displaying" aria-label="Anchor">#</a></span></h2><p>If we want to create multple number inserted url paths, we can create one path for article ids like <code>&lt;int:article_id&gt;</code> for passing one integer in the url, and then in views.py we define the article function with article_id parameter.
+<img src="article_url.png" alt="Article URL example" width="80%"> <img src="article_id_func.png" alt="Article ID function example" width="60%"></p>
+<div style="display: flex; gap: 10px;">
+    <img src="article_url_display.png" width="50%">
+    <img src="article_2_display.png" width="40%">
+</div>
+<h2 id="leverage-html-and-css" class="relative group">Leverage HTML and CSS <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#leverage-html-and-css" aria-label="Anchor">#</a></span></h2><p>In the blog app folder, create a folder named <code>templates</code>, and within it, create another folder named <code>blog</code>. Inside this blog folder, add the first HTML file, <code>index.html</code>. We can render this HTML view in views.py of the blog app by using <code>render(request, 'blog/index.html', {'article_id': article_id})</code>.</p>
+<pre tabindex="0"><code> def article(request, article_id):
+     return render(request, &#39;blog/index.html&#39;, {&#39;article_id&#39;: article_id})
+</code></pre><ul>
+<li>request: the current HTTP request.</li>
+<li>&lsquo;blog/index.html&rsquo;: the path to the HTML template.</li>
+<li>{&lsquo;article_id&rsquo;: article_id}: a context dictionary that passes article_id to the template.</li>
+</ul>
+<p>Afterwards, it&rsquo;s important to add in element <code>blog.apps.BlogConfig</code> in <code>INSTALLED_APPS</code> list of the<code> settings.py</code> of the main project folder.</p>
+<ul>
+<li>App Recognition: Adding blog.apps.BlogConfig registers the app with Django, making it aware of this app.</li>
+<li>Template &amp; Static Files: Django loads templates and static files only from registered apps.</li>
+<li>Database Models: Django includes models from registered apps during migrations to set up database tables.
+<img src="installed_apps.png" width="60%"></li>
+</ul>
 
       </div>
     </section>
@@ -535,6 +676,17 @@
     </footer>
   </article>
 
+        
+          <div class="pointer-events-none absolute bottom-0 end-0 top-[100vh] w-12">
+            <a
+              href="#the-top"
+              class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 backdrop-blur hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+              aria-label="Scroll to top"
+              title="Scroll to top"
+            >
+              &uarr;
+            </a>
+          </div>
         
       </main><footer class="py-10 print:hidden">
   
