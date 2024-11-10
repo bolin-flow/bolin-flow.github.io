@@ -139,7 +139,7 @@
     "keywords": ["Django","Web"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "833"
+    "wordCount": "960"
   }
   </script>
 
@@ -489,6 +489,7 @@
     <li><a href="#build-view-function-for-new-url">Build view function for new url</a></li>
     <li><a href="#build-view-functions-for-displaying">Build view functions for displaying</a></li>
     <li><a href="#leverage-html-and-css">Leverage HTML and CSS</a></li>
+    <li><a href="#work-on-chatbot-user-interface">Work on chatbot user interface</a></li>
   </ul>
 </nav>
   </div>
@@ -619,13 +620,27 @@ def index(request):
 <li>&lsquo;blog/index.html&rsquo;: the path to the HTML template.</li>
 <li>{&lsquo;article_id&rsquo;: article_id}: a context dictionary that passes article_id to the template.</li>
 </ul>
-<p>Afterwards, it&rsquo;s important to add in element <code>blog.apps.BlogConfig</code> in <code>INSTALLED_APPS</code> list of the<code> settings.py</code> of the main project folder.</p>
+<p>Afterwards, it&rsquo;s important to add in element <code>blog.apps.BlogConfig</code> in <code>INSTALLED_APPS</code> list of the<code> settings.py</code> of the main project folder. So we are able to return html file to users.</p>
 <ul>
 <li>App Recognition: Adding blog.apps.BlogConfig registers the app with Django, making it aware of this app.</li>
 <li>Template &amp; Static Files: Django loads templates and static files only from registered apps.</li>
 <li>Database Models: Django includes models from registered apps during migrations to set up database tables.
 <img src="installed_apps.png" width="60%"></li>
 </ul>
+<p>Next, we’ll add CSS to improve the page&rsquo;s appearance. Start by creating a folder named <code>static</code> in the blog app directory. Inside static, create another folder named <code>blog</code>, and then add a new file called <code>style.css</code> in <code>static/blog</code>.
+To import this CSS file in index.html:</p>
+<ul>
+<li>Use <code> {% load static %}</code> to load the static folder</li>
+<li>Below this line we need specify loading <code>static 'blog/style.css'</code>:</li>
+</ul>
+<pre tabindex="0"><code>&lt;link rel=&#34;stylesheet&#34;, type=&#34;text/css&#34;, href=&#34;{% static &#39;blog/style.css&#39; %}&#34; /&gt;
+</code></pre><p>Now we can add changes to style.css, for example:</p>
+<pre tabindex="0"><code>h1 {
+    text-align: center;
+    color:rgb(25, 162, 203);
+}
+</code></pre><p>Note: Each time we make changes to style.css, we may need to restart the server.</p>
+<h2 id="work-on-chatbot-user-interface" class="relative group">Work on chatbot user interface <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#work-on-chatbot-user-interface" aria-label="Anchor">#</a></span></h2><p>Edit the index.html file for the user interface.</p>
 
       </div>
     </section>

@@ -97,10 +97,31 @@ In the blog app folder, create a folder named `templates`, and within it, create
 - 'blog/index.html': the path to the HTML template.
 - {'article_id': article_id}: a context dictionary that passes article_id to the template.
 
-Afterwards, it's important to add in element `blog.apps.BlogConfig` in `INSTALLED_APPS` list of the` settings.py` of the main project folder. 
+Afterwards, it's important to add in element `blog.apps.BlogConfig` in `INSTALLED_APPS` list of the` settings.py` of the main project folder. So we are able to return html file to users.
 
 - App Recognition: Adding blog.apps.BlogConfig registers the app with Django, making it aware of this app.
 - Template & Static Files: Django loads templates and static files only from registered apps.
 - Database Models: Django includes models from registered apps during migrations to set up database tables.
 <img src="installed_apps.png" width="60%">
 
+Next, we’ll add CSS to improve the page's appearance. Start by creating a folder named `static` in the blog app directory. Inside static, create another folder named `blog`, and then add a new file called `style.css` in `static/blog`.
+To import this CSS file in index.html:
+- Use ` {% load static %}` to load the static folder 
+- Below this line we need specify loading `static 'blog/style.css'`:
+```
+<link rel="stylesheet", type="text/css", href="{% static 'blog/style.css' %}" />
+```
+
+Now we can add changes to style.css, for example:
+```
+h1 {
+    text-align: center;
+    color:rgb(25, 162, 203);
+}
+```
+Note: Each time we make changes to style.css, we may need to restart the server.
+
+
+## Work on chatbot user interface 
+
+Edit the index.html file for the user interface. 
