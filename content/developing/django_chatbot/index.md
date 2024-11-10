@@ -124,4 +124,4 @@ Note: Each time we make changes to style.css, we may need to restart the server.
 
 ## Work on chatbot user interface 
 
-Edit the index.html file for the user interface. 
+In order to make the UI looks better, we need to edit the index.html and style.css files for the user interface. In the chatbot id 
