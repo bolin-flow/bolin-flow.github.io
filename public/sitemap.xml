@@ -3,21 +3,19 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
     
-  
-    
-      <url>
-            <loc>http://localhost:1313/exploring/kivy_learn/</loc>
-            <lastmod>2024-10-30T08:10:00+00:00</lastmod>
-          </url>
-    
-  
-    
       <url>
             <loc>http://localhost:1313/exploring/</loc>
-            <lastmod>2024-10-30T08:10:00+00:00</lastmod>
+            <lastmod>2024-11-10T15:30:10+00:00</lastmod>
           </url>
     
   
+    
+  
+    
+      <url>
+            <loc>http://localhost:1313/exploring/model_risk_management/</loc>
+            <lastmod>2024-11-10T15:30:10+00:00</lastmod>
+          </url>
     
   
     
@@ -27,8 +25,30 @@
     
       <url>
             <loc>http://localhost:1313/developing/</loc>
-            <lastmod>2024-09-18T20:26:26+00:00</lastmod>
+            <lastmod>2024-11-02T04:32:10+00:00</lastmod>
           </url>
+    
+  
+    
+  
+    
+      <url>
+            <loc>http://localhost:1313/developing/django_chatbot/</loc>
+            <lastmod>2024-11-02T04:32:10+00:00</lastmod>
+          </url>
+    
+  
+    
+  
+    
+  
+    
+      <url>
+            <loc>http://localhost:1313/exploring/kivy_learn/</loc>
+            <lastmod>2024-10-30T08:10:00+00:00</lastmod>
+          </url>
+    
+  
     
   
     
