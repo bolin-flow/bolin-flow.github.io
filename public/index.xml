@@ -7,14 +7,14 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>@copyright 2024 Bolin</copyright>
-    <lastBuildDate>Sun, 10 Nov 2024 15:30:10 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 03 Jan 2025 10:10:10 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Model Risk Management for Banking organizations</title>
-      <link>http://localhost:1313/exploring/model_risk_management/</link>
-      <pubDate>Sun, 10 Nov 2024 15:30:10 +0000</pubDate>
-      <guid>http://localhost:1313/exploring/model_risk_management/</guid>
-      <description>The Federal Reserve and OCC&amp;rsquo;s guidance on model risk management outlines standards that banks need to follow to ensure the reliability and integrity of their financial models.</description>
+      <title>Generative AI Development Strategies and Patterns</title>
+      <link>http://localhost:1313/exploring/gen_ai_strategy/</link>
+      <pubDate>Fri, 03 Jan 2025 10:10:10 +0000</pubDate>
+      <guid>http://localhost:1313/exploring/gen_ai_strategy/</guid>
+      <description>AI embodies distinct capabilities rather than functionalities.</description>
     </item>
     <item>
       <title>Django Web Development Chatbot</title>
