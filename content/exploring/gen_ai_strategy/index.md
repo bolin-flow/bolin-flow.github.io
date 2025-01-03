@@ -10,7 +10,7 @@ showTableOfContents = true
 ## Strategies for the AI Era
 
 AI embodies distinct capabilities rather than functionalities. Developing the right AI capabilities and assembling complementary teams are essential.
-A key question is how to design a system centered on AI memory, tailored to the needs of diverse users.
+A key question is how to design a system centered on AI memory, tailored to the needs of diverse users. Training LLMs will persist, even when encountering a scaling wall where enhancing intelligence becomes increasingly challenging at high-inteligent levels. Smarter training with high-quality data can further unlock improvements and ultimately reach the critical tipping point, significantly transforming everyday life.
 
 For AI enterprises, building own foundation model marks a critical milestone. These large-scale models serve as the operating systems and programming languages of the AI era, powering superproducts akin to current semiconductors and acting as gateways to next-generation devices.
 
