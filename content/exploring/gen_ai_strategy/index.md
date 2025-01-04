@@ -22,7 +22,7 @@ Recognize that consumer acceptance of electronic products is a gradual process. 
 
 ## Models & Algorithms Development
 
-When developing AI algorithms and predictive models, it is important to first assess whether the task at hand is best addressed using rules-based systems, traditional machine learning, or generative AI algorithms. In factory or enterprise settings, cost-effective, as these environments typically feature well-defined scenarios. For consumer-facing applications, the situation is more complex. It involves diverse contexts, ethical considerations, and "last-mile" challenges, which require additional time and effort to resolve.
+When developing AI algorithms and predictive models, it is important to first assess whether the task at hand is best addressed using rules-based systems, traditional machine learning, or generative AI algorithms. In factory or enterprise settings, classic automation solutions ca neb cost-effective, as these environments typically feature well-defined scenarios. For consumer-facing applications, the situation is more complex. It involves diverse contexts, ethical considerations, and "last-mile" challenges, which require additional time and effort to resolve. One approach is to focus on improving existing popular products, enhancing them to deliver even greater value.
 
 Avoid blindly following scaling laws. In the field of LLMs or NLP, researchers have demonstrated the effects of scaling laws on next-token generation tasks through experiments with GPT2 and GPT3 models. However, in other domains, it is more prudent to first validate methods with smaller datasets and models rather than focusing solely on scaling up data and model size.
 
