@@ -18,7 +18,15 @@ For AI start-ups, the focus should be on envisioning the products that will shap
 
 The potential of the robotic AI industry is constrained by challenges in both AI algorithms and robotics. Robotics has not yet reached a technological tipping point, with most efforts centered on open-source and collaborative innovation. Developing robotic hardware requires significant hands-on experience and a longer learning curve, though the industry is relatively standardized for new learners. In contrast, AI algorithm development relies on a small pool of leading research labs, with algorithmic limitations now presenting greater challenges than hardware. To create AI robots that genuinely enhance daily life, we need not only [semantic intelligence but also physical intelligence](https://www.bilibili.com/video/BV1yM4m1D7tC/?spm_id_from=333.337.search-card.all.click&vd_source=2ebd024eac0b9cf1de30b74eb35caaf8) to perform real-world tasks (e.g., understanding principles like Newton’s laws and achieving precise control).
 
-Recognize that consumer acceptance of electronic products is a gradual process. It's important to evaluate a product from a higher perspective see whether one product has the potential to become a common category in society in the future.  When innovating in consumer electronics, start by thoroughly understanding the current market landscape. Identify popular products and pinpoint unmet or unsatisfied needs that could be addressed to provide additional value. Building upon the success of existing products can be a strategic and reliable approach to attracting new customers.
+Recognize that consumer acceptance of electronic products is a gradual process. It's important to evaluate a product from a higher perspective see whether one product has the potential to become a common category in society in the future.  When innovating in consumer electronics, start by thoroughly understanding the current market landscape. Identify popular products and pinpoint unmet or unsatisfied needs that could be addressed to provide additional value. Building upon the success of existing products can be a strategic and reliable approach to attracting new customers. 
+
+## Models & Algorithms Development
+
+When developing AI algorithms and predictive models, it is important to first assess whether the task at hand is best addressed using rules-based systems, traditional machine learning, or generative AI algorithms. In factory or enterprise settings, cost-effective, as these environments typically feature well-defined scenarios. For consumer-facing applications, the situation is more complex. It involves diverse contexts, ethical considerations, and "last-mile" challenges, which require additional time and effort to resolve.
+
+Avoid blindly following scaling laws. In the field of LLMs or NLP, researchers have demonstrated the effects of scaling laws on next-token generation tasks through experiments with GPT2 and GPT3 models. However, in other domains, it is more prudent to first validate methods with smaller datasets and models rather than focusing solely on scaling up data and model size.
+
+What will the next groundbreaking architecture be? It’s hard to predict. It often takes 4-5 years for practitioners and researchers to identify a truly transformative foundational architecture. For example, diffusion models introduced in 2015 and transformers proposed in 2017 have only been recognized as revolutionary advancements in the last few years.  The Transformer architecture demonstrated its effectiveness in processing large datasets using GPUs. One advanced architecture should excel at identifying the most relevant information within large datasets.
 
 ## Strategies for Personal Growth
 
@@ -31,6 +39,7 @@ Fully accepting our own traits is essential, and understand these traits can hav
 [Be proactive in making our own choices.](https://www.goodreads.com/book/show/36072.The_7_Habits_of_Highly_Effective_People) Approach decisions with a positive and proactive mindset, recognizing that we always have the ability to choose. The opposite of "making choices" is "judging right or wrong", it fixates on labeling A or B rather than exploring possibilities. Choosing focuses on evaluating options to determine the better, driven by openness and a growth-oriented perspective. Most importantly, remember that choices are rarely constrained to two options. ["Great insight comes only from opening your mind to many options."](https://sive.rs/options). 
 
 
+## Augumented LLM and Worflows
 
 
 
