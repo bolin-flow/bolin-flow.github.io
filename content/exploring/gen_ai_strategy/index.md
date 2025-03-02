@@ -41,7 +41,9 @@ Fully accepting our own traits is essential, and understand these traits can hav
 
 ## Augumented LLM and Worflows
 
+Agengtic framework like Langchain or Amazon Bedrock make agentic systems easier but these tools add extra layers of abstraction that can obscure the underlying prompts and responses, making us harder to debug. We can first develop using LLM APIs directly , and apply one framework unless we really need it and understand the code under the hood. 
 
+Anthropic has introduced key building blocks and workflows for construction of agentic systems. 
 
 
 
