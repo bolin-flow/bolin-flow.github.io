@@ -8,7 +8,7 @@ draft = false
 <div style="height: 80px;"></div>
 
 <div style="background-color: rgba(128, 128, 128, 0.12); padding: 3px; border-radius: 10px; font-weight: bold; box-shadow: 0 4px 8px rgba(0,0,0,0.11);">
-Open source, machine learning, creative coding, and sharing ideas…
+AI product development, machine learning, creative coding, and sharing ideas…
 </div>
 <div style="height: 180px;"></div>
 
