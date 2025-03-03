@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Agentic System on Gulu :paw_prints: Gulu</title>
+    <link>http://localhost:1313/tags/agentic-system/</link>
+    <description>Recent content in Agentic System on Gulu :paw_prints: Gulu</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>@copyright 2024 Bolin</copyright>
+    <lastBuildDate>Fri, 03 Jan 2025 10:10:10 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/agentic-system/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Generative AI Development Strategies and Patterns</title>
+      <link>http://localhost:1313/exploring/gen_ai_strategy/</link>
+      <pubDate>Fri, 03 Jan 2025 10:10:10 +0000</pubDate>
+      <guid>http://localhost:1313/exploring/gen_ai_strategy/</guid>
+      <description>Updated LLM workflows and agentic system content as of 2025-Feb-28</description>
+    </item>
+  </channel>
+</rss>
