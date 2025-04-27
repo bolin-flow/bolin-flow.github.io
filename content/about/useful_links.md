@@ -1,5 +1,5 @@
 +++
-title = "📎 Useful Links"
+title = "📎 Some Useful Links"
 date = 2022-01-25
 summary = "Useful links for reviewing or contamplations."
 showReadingTime = false
