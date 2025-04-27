@@ -16,7 +16,7 @@ showHeadingAnchors = true
 
  
 <div style="background-color: rgba(128, 128, 128, 0.12); padding: 10px; border-radius: 16px;box-shadow: 0 4px 8px rgba(0,0,0,0.13);">
-My name is Bolin. I'm documenting my learning notes on this website, where I share my passion for developing statistical solutions, building machine learning models, and exploring interesting ideals. As a principal data scientist at <a href="https://www.zinnia.com" target="_blank">Zinnia</a>, my focus now is on building data-driven products, optimizing generative AI and advancing machine learning applications. Feel free to <a href="https://www.linkedin.com/in/bolinli/" target="_blank">connect</a>—I’m always excited to explore new perspectives and learn from others.
+My name is Bolin. I'm documenting my learning and notes on this website, where I share my passion for developing data science solutions and exploring interesting ideas.  My current focus is on building LLM-driven capabilities, optimizing AI functionalities, and creating useful products for end users.  Feel free to <a href="https://www.linkedin.com/in/bolinli/" target="_blank">connect</a>—I’m always excited to explore new perspectives and learn from others.
 </div>
 
 <div style="height: 50px;"></div>
@@ -24,41 +24,3 @@ My name is Bolin. I'm documenting my learning notes on this website, where I sha
 
 <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
 <script src="/js/learn3.js"></script>
-
-<!-- {{< chart >}} 
-type: 'bubble',
-data: {
-  datasets: [{
-    label: ' ',
-    data: [{
-      x: 20,
-      y: 30,
-      r: 15
-    }, {
-      x: 40,
-      y: 10,
-      r: 10
-    }],
-    backgroundColor: 'rgb(255, 99, 132)'
-  }]
-}
-{{< /chart >}} -->
-
-<!-- <div style="width: 300px; height: 300px;">
-{{< chart >}}
-type: 'doughnut',
-data: {
-  labels: ['Red', 'Blue', 'Yellow'],
-  datasets: [{
-    label: 'My First Dataset',
-    data: [120, 80, 60],
-    backgroundColor: [
-      'rgba(128, 128, 128, 0.5)',
-      'rgba(169, 169, 169, 0.5)',
-      'rgba(211, 211, 211, 0.5)'
-    ],
-    borderWidth: 0,
-    hoverOffset: 4
-  }]
-}
-{{< /chart >}} -->
