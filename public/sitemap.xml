@@ -10,6 +10,21 @@
     
   
     
+      <url>
+            <loc>http://localhost:1313/exploring/next_js_doc/</loc>
+            <lastmod>2025-03-04T10:22:00+00:00</lastmod>
+          </url>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
   
     
   
@@ -18,8 +33,6 @@
             <loc>http://localhost:1313/exploring/gen_ai_strategy/</loc>
             <lastmod>2025-01-03T10:10:10+00:00</lastmod>
           </url>
-    
-  
     
   
     
@@ -48,7 +61,14 @@
   
     
       <url>
-            <loc>http://localhost:1313/exploring/kivy_learn/</loc>
+            <loc>http://localhost:1313/archive/</loc>
+            <lastmod>2024-10-30T08:10:00+00:00</lastmod>
+          </url>
+    
+  
+    
+      <url>
+            <loc>http://localhost:1313/archive/kivy_learn/</loc>
             <lastmod>2024-10-30T08:10:00+00:00</lastmod>
           </url>
     

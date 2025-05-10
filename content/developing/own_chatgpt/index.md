@@ -12,12 +12,12 @@ showTableOfContents = true
 
 ## Download Ollama and Run Commands
 
-Ollama is a versatile tool that offers a range of language models with detailed specifications. To get started, [download Ollama](https://ollama.com/download) and explore the different models available on the Ollama website. Once downloaded, you can use Ollama commands in your terminal.
+Ollama is a versatile tool that offers a range of language models with detailed specifications. To get started, [download Ollama](https://ollama.com/download) and explore the different models available on the Ollama website. Once downloaded, we can use Ollama commands in the terminal.
 
 Run `ollama` to see the available commands:
 ![ollama_command.png](ollama_command.png)
 
-On the [llama3.1 download page](https://ollama.com/library/llama3.1:8b-instruct-q4_K_M/blobs/11ce4ee3e170), you can find a list of llama3.1 models. There are also comparisons made for different types of models.
+On the [llama3.1 download page](https://ollama.com/library/llama3.1:8b-instruct-q4_K_M/blobs/11ce4ee3e170), we see a list of llama3.1 models. There are also comparisons made for different types of models.
 
 ## LLM Sizes, Types, and Quantizations
 
@@ -63,7 +63,7 @@ Run `ollama show model_name --modelfile` to view the modelfile, relevant descrip
 - TEMPLATE: Displays the system prompt if it exists.
 - SYSTEM: Describes the chat scenario between a user and an AI assistant.
 
-To create a custom system prompt for a selected model, first copy the modelfile into your own file called `new-modelfile`. Let's say the model is `gemma2:2b-instruct-q4_K_M`. 
+To create a custom system prompt for a selected model, first copy the modelfile into one file called `new-modelfile`. Let's say the model is `gemma2:2b-instruct-q4_K_M`. 
 Use the command `ollama show gemma2:2b-instruct-q4_K_M --modelfile > new-modelfile` to copy the modelfile to the new file. Then modify and save this new-modelfile file with the updated system prompt. Finally, create a new model from the updated modelfile using `ollama create new-gemma2_2b_instruct —-file new-modelfile`. Run `ollama run gemma2_2b_instruct` to interact with the updated model!
 
 
@@ -82,19 +82,19 @@ Download the `ollama` Python package, `import ollama`, and then view the details
 
 ## Build Custom System Prompt 
 
-To create a new model file from an existing model, you can follow these steps. This process involves copying the model file using the `>` operator and creating `new-modelfile` using Ollama.
+To create a new model file from an existing model, we can follow these steps. This process involves copying the model file using the `>` operator and creating `new-modelfile` using Ollama.
 
-Start by copying the modelfile into a new file named new-modelfile. You can do this by running the following command in your terminal: `ollama show gemma2:2b-instruct-q4_K_M --modelfile > new-modelfile`
-This command will extract the model file for `gemma2:2b-instruct-q4_K_M` and save it as new-modelfile in your current directory. 
+Start by copying the modelfile into a new file named new-modelfile. We run the following command in your terminal: `ollama show gemma2:2b-instruct-q4_K_M --modelfile > new-modelfile`
+This command will extract the model file for `gemma2:2b-instruct-q4_K_M` and save it as new-modelfile in the current directory. 
 
-To view the contents of the newly created new-modelfile, use the cat command:`cat new-modelfile`. To confirm where the new-modelfile has been saved, you can use the `pwd` command to print the current working directory. 
+To view the contents of the newly created new-modelfile, use the cat command:`cat new-modelfile`. To confirm where the new-modelfile has been saved, we can use the `pwd` command to print the current working directory. 
 
 <details>
 
 <summary>
 <b>How to edit modelfile in Visual Studio Code.</b>
 </summary>
-If you want to edit the model file using Visual Studio Code, start by enabling the command to open files directly from the terminal. Open the Command Palette by pressing `Cmd+Shift+P` (Mac), type Shell Command, and select Install 'code' command in PATH. Once enabled, you can open the new-modelfile by running the command: `code new-modelfile` to open this file. After opening the file, you can add a custom prompt or make other modifications to the downloaded language model.
+If we want to edit the model file using Visual Studio Code, start by enabling the command to open files directly from the terminal. Open the Command Palette by pressing `Cmd+Shift+P` (Mac), type Shell Command, and select Install 'code' command in PATH. Once enabled, you can open the new-modelfile by running the command: `code new-modelfile` to open this file. After opening the file, we can add a custom prompt or make other modifications to the downloaded language model.
 
 ```
 pwd
@@ -105,7 +105,7 @@ code new-modelfile
 
 ## Run Docker Image for Ollama Web UI 
 
-We can create an environment that can execute applications consistently across different systems using Docker. Using Docker for this chatbot UI provides a stable and isolated environment, ensuring the application runs smoothly across multiple systems. It simplifies setup, encapsulates dependencies, and allows for easy deployment with a single command. Docker also enables data persistence, scalability, and enhanced security, making it an ideal choice for managing your chatbot interface efficiently.
+We can create an environment to run applications consistently across different systems using Docker. Using Docker for this chatbot UI provides a stable and isolated environment, ensuring the application runs smoothly across multiple systems. It simplifies setup, encapsulates dependencies, and allows for easy deployment with a single command. Docker also enables data persistence, scalability, and enhanced security, making it an ideal choice for managing the chatbot interface efficiently.
 
 <details>
 <summary>
@@ -131,22 +131,16 @@ ghcr.io/ollama-webui/ollama-webui:main
 
 </details>
 
-After running the above command, if you see the message "Unable to find image 'ghcr.io/ollama-webui/ollama-webui locally, main: Pulling from ollama-webui/ollama-webui," the image will then be downloaded. Once completed, run `docker ps` to display all running containers.
+After running the above command, if we see the message "Unable to find image 'ghcr.io/ollama-webui/ollama-webui locally, main: Pulling from ollama-webui/ollama-webui," the image will then be downloaded. Once completed, run `docker ps` to display all running containers.
 ```
 CONTAINER ID   IMAGE                                    COMMAND           CREATED         STATUS         PORTS                    NAMES
 4b7938e75eac   ghcr.io/ollama-webui/ollama-webui:main   "bash start.sh"   2 minutes ago   Up 2 minutes   0.0.0.0:3000->8080/tcp   ollama-webui
 ```
 
-You can now access the web UI at http://127.0.0.1:3000/auth/. After signing up with a mock email address, you can select the locally downloaded model and start asking questions. Enjoy exploring!
+Now we can access the web UI at http://127.0.0.1:3000/auth/. After signing up with a mock email address, we select one locally downloaded model and start asking questions. Enjoy exploring!
 
 
-<details>
-<summary>
 <b>Sign up and interact with Ollama Web UI</b>
-</summary>
 
 ![ollama_web_ui.png](ollama_web_ui.png)
 ![ollama_chat_qa.png](ollama_chat_qa.png)
-</details>
-
-There are other ways to build our own chatbot UI. For example, we can also explore Streamlit to integrate chat history and provide options to select different local models.

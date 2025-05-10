@@ -139,7 +139,7 @@
     "keywords": ["LLM","Ollama"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "1083"
+    "wordCount": "1046"
   }
   </script>
 
@@ -501,7 +501,7 @@
       
       <div class="min-h-0 min-w-0 max-w-prose grow">
         <p><sub>Updated Ollama Web UI on 2024-Aug-24</sub></p>
-<h2 id="download-ollama-and-run-commands" class="relative group">Download Ollama and Run Commands <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#download-ollama-and-run-commands" aria-label="Anchor">#</a></span></h2><p>Ollama is a versatile tool that offers a range of language models with detailed specifications. To get started, <a href="https://ollama.com/download" target="_blank" rel="noreferrer">download Ollama</a> and explore the different models available on the Ollama website. Once downloaded, you can use Ollama commands in your terminal.</p>
+<h2 id="download-ollama-and-run-commands" class="relative group">Download Ollama and Run Commands <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#download-ollama-and-run-commands" aria-label="Anchor">#</a></span></h2><p>Ollama is a versatile tool that offers a range of language models with detailed specifications. To get started, <a href="https://ollama.com/download" target="_blank" rel="noreferrer">download Ollama</a> and explore the different models available on the Ollama website. Once downloaded, we can use Ollama commands in the terminal.</p>
 <p>Run <code>ollama</code> to see the available commands:
 
 
@@ -555,7 +555,7 @@
 
 </figure>
 </p>
-<p>On the <a href="https://ollama.com/library/llama3.1:8b-instruct-q4_K_M/blobs/11ce4ee3e170" target="_blank" rel="noreferrer">llama3.1 download page</a>, you can find a list of llama3.1 models. There are also comparisons made for different types of models.</p>
+<p>On the <a href="https://ollama.com/library/llama3.1:8b-instruct-q4_K_M/blobs/11ce4ee3e170" target="_blank" rel="noreferrer">llama3.1 download page</a>, we see a list of llama3.1 models. There are also comparisons made for different types of models.</p>
 <h2 id="llm-sizes-types-and-quantizations" class="relative group">LLM Sizes, Types, and Quantizations <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#llm-sizes-types-and-quantizations" aria-label="Anchor">#</a></span></h2><p>In the context of large language models (LLMs):</p>
 <ul>
 <li>Chat: Direct conversation with the model, where the character card serves as your prompt.</li>
@@ -690,7 +690,7 @@ We can interact with Ollama directly using the terminal.
 <li>TEMPLATE: Displays the system prompt if it exists.</li>
 <li>SYSTEM: Describes the chat scenario between a user and an AI assistant.</li>
 </ul>
-<p>To create a custom system prompt for a selected model, first copy the modelfile into your own file called <code>new-modelfile</code>. Let&rsquo;s say the model is <code>gemma2:2b-instruct-q4_K_M</code>.
+<p>To create a custom system prompt for a selected model, first copy the modelfile into one file called <code>new-modelfile</code>. Let&rsquo;s say the model is <code>gemma2:2b-instruct-q4_K_M</code>.
 Use the command <code>ollama show gemma2:2b-instruct-q4_K_M --modelfile &gt; new-modelfile</code> to copy the modelfile to the new file. Then modify and save this new-modelfile file with the updated system prompt. Finally, create a new model from the updated modelfile using <code>ollama create new-gemma2_2b_instruct —-file new-modelfile</code>. Run <code>ollama run gemma2_2b_instruct</code> to interact with the updated model!</p>
 <h2 id="run-llms-with-ollama" class="relative group">Run LLMs with Ollama <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#run-llms-with-ollama" aria-label="Anchor">#</a></span></h2><p>Download the <code>ollama</code> Python package, <code>import ollama</code>, and then view the details with <code>ollama.list()</code></p>
 <details>
@@ -766,19 +766,19 @@ Use the command <code>ollama show gemma2:2b-instruct-q4_K_M --modelfile &gt; new
 </figure>
 </p>
 </details>
-<h2 id="build-custom-system-prompt" class="relative group">Build Custom System Prompt <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#build-custom-system-prompt" aria-label="Anchor">#</a></span></h2><p>To create a new model file from an existing model, you can follow these steps. This process involves copying the model file using the <code>&gt;</code> operator and creating <code>new-modelfile</code> using Ollama.</p>
-<p>Start by copying the modelfile into a new file named new-modelfile. You can do this by running the following command in your terminal: <code>ollama show gemma2:2b-instruct-q4_K_M --modelfile &gt; new-modelfile</code>
-This command will extract the model file for <code>gemma2:2b-instruct-q4_K_M</code> and save it as new-modelfile in your current directory.</p>
-<p>To view the contents of the newly created new-modelfile, use the cat command:<code>cat new-modelfile</code>. To confirm where the new-modelfile has been saved, you can use the <code>pwd</code> command to print the current working directory.</p>
+<h2 id="build-custom-system-prompt" class="relative group">Build Custom System Prompt <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#build-custom-system-prompt" aria-label="Anchor">#</a></span></h2><p>To create a new model file from an existing model, we can follow these steps. This process involves copying the model file using the <code>&gt;</code> operator and creating <code>new-modelfile</code> using Ollama.</p>
+<p>Start by copying the modelfile into a new file named new-modelfile. We run the following command in your terminal: <code>ollama show gemma2:2b-instruct-q4_K_M --modelfile &gt; new-modelfile</code>
+This command will extract the model file for <code>gemma2:2b-instruct-q4_K_M</code> and save it as new-modelfile in the current directory.</p>
+<p>To view the contents of the newly created new-modelfile, use the cat command:<code>cat new-modelfile</code>. To confirm where the new-modelfile has been saved, we can use the <code>pwd</code> command to print the current working directory.</p>
 <details>
 <summary>
 <b>How to edit modelfile in Visual Studio Code.</b>
 </summary>
-If you want to edit the model file using Visual Studio Code, start by enabling the command to open files directly from the terminal. Open the Command Palette by pressing `Cmd+Shift+P` (Mac), type Shell Command, and select Install 'code' command in PATH. Once enabled, you can open the new-modelfile by running the command: `code new-modelfile` to open this file. After opening the file, you can add a custom prompt or make other modifications to the downloaded language model.
+If we want to edit the model file using Visual Studio Code, start by enabling the command to open files directly from the terminal. Open the Command Palette by pressing `Cmd+Shift+P` (Mac), type Shell Command, and select Install 'code' command in PATH. Once enabled, you can open the new-modelfile by running the command: `code new-modelfile` to open this file. After opening the file, we can add a custom prompt or make other modifications to the downloaded language model.
 <pre tabindex="0"><code>pwd
 code new-modelfile
 </code></pre></details>
-<h2 id="run-docker-image-for-ollama-web-ui" class="relative group">Run Docker Image for Ollama Web UI <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#run-docker-image-for-ollama-web-ui" aria-label="Anchor">#</a></span></h2><p>We can create an environment that can execute applications consistently across different systems using Docker. Using Docker for this chatbot UI provides a stable and isolated environment, ensuring the application runs smoothly across multiple systems. It simplifies setup, encapsulates dependencies, and allows for easy deployment with a single command. Docker also enables data persistence, scalability, and enhanced security, making it an ideal choice for managing your chatbot interface efficiently.</p>
+<h2 id="run-docker-image-for-ollama-web-ui" class="relative group">Run Docker Image for Ollama Web UI <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#run-docker-image-for-ollama-web-ui" aria-label="Anchor">#</a></span></h2><p>We can create an environment to run applications consistently across different systems using Docker. Using Docker for this chatbot UI provides a stable and isolated environment, ensuring the application runs smoothly across multiple systems. It simplifies setup, encapsulates dependencies, and allows for easy deployment with a single command. Docker also enables data persistence, scalability, and enhanced security, making it an ideal choice for managing the chatbot interface efficiently.</p>
 <details>
 <summary>
 <b>View to code to run a Docker container for Ollama Web UI</b>
@@ -800,14 +800,11 @@ ghcr.io/ollama-webui/ollama-webui:main
 <li>Image: ghcr.io/ollama-webui/ollama-webui:main specifies the main branch of the Ollama Web UI container image.</li>
 </ul>
 </details>
-<p>After running the above command, if you see the message &ldquo;Unable to find image &lsquo;ghcr.io/ollama-webui/ollama-webui locally, main: Pulling from ollama-webui/ollama-webui,&rdquo; the image will then be downloaded. Once completed, run <code>docker ps</code> to display all running containers.</p>
+<p>After running the above command, if we see the message &ldquo;Unable to find image &lsquo;ghcr.io/ollama-webui/ollama-webui locally, main: Pulling from ollama-webui/ollama-webui,&rdquo; the image will then be downloaded. Once completed, run <code>docker ps</code> to display all running containers.</p>
 <pre tabindex="0"><code>CONTAINER ID   IMAGE                                    COMMAND           CREATED         STATUS         PORTS                    NAMES
 4b7938e75eac   ghcr.io/ollama-webui/ollama-webui:main   &#34;bash start.sh&#34;   2 minutes ago   Up 2 minutes   0.0.0.0:3000-&gt;8080/tcp   ollama-webui
-</code></pre><p>You can now access the web UI at http://127.0.0.1:3000/auth/. After signing up with a mock email address, you can select the locally downloaded model and start asking questions. Enjoy exploring!</p>
-<details>
-<summary>
-<b>Sign up and interact with Ollama Web UI</b>
-</summary>
+</code></pre><p>Now we can access the web UI at http://127.0.0.1:3000/auth/. After signing up with a mock email address, we select one locally downloaded model and start asking questions. Enjoy exploring!</p>
+<p><b>Sign up and interact with Ollama Web UI</b></p>
 <p>
 
 
@@ -936,8 +933,6 @@ ghcr.io/ollama-webui/ollama-webui:main
 
 </figure>
 </p>
-</details>
-<p>There are other ways to build our own chatbot UI. For example, we can also explore Streamlit to integrate chat history and provide options to select different local models.</p>
 
       </div>
     </section>
@@ -977,25 +972,6 @@ ghcr.io/ollama-webui/ollama-webui:main
           
         </span>
         <span>
-          
-            <a class="group flex text-right" href="/developing/rag_metrics/">
-              <span class="flex flex-col">
-                <span
-                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >What Are We Really Measuring in a RAG Chatbot?</span
-                >
-                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
-                  
-                    <time datetime="2024-09-18 20:26:26 &#43;0000 UTC">18 September 2024</time>
-                  
-                </span>
-              </span>
-              <span
-                class="ms-2 text-neutral-700 transition-transform group-hover:-translate-x-[2px] group-hover:text-primary-600 dark:text-neutral dark:group-hover:text-primary-400"
-                ><span class="ltr:inline rtl:hidden">&rarr;</span
-                ><span class="ltr:hidden rtl:inline">&larr;</span></span
-              >
-            </a>
           
         </span>
       </div>
@@ -1053,6 +1029,22 @@ ghcr.io/ollama-webui/ollama-webui:main
                     class="group-dark:hover:text-primary-400 transition-colors group-hover:text-primary-600"
                   ><span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M172.5 131.1C228.1 75.51 320.5 75.51 376.1 131.1C426.1 181.1 433.5 260.8 392.4 318.3L391.3 319.9C381 334.2 361 337.6 346.7 327.3C332.3 317 328.9 297 339.2 282.7L340.3 281.1C363.2 249 359.6 205.1 331.7 177.2C300.3 145.8 249.2 145.8 217.7 177.2L105.5 289.5C73.99 320.1 73.99 372 105.5 403.5C133.3 431.4 177.3 435 209.3 412.1L210.9 410.1C225.3 400.7 245.3 404 255.5 418.4C265.8 432.8 262.5 452.8 248.1 463.1L246.5 464.2C188.1 505.3 110.2 498.7 60.21 448.8C3.741 392.3 3.741 300.7 60.21 244.3L172.5 131.1zM467.5 380C411 436.5 319.5 436.5 263 380C213 330 206.5 251.2 247.6 193.7L248.7 192.1C258.1 177.8 278.1 174.4 293.3 184.7C307.7 194.1 311.1 214.1 300.8 229.3L299.7 230.9C276.8 262.1 280.4 306.9 308.3 334.8C339.7 366.2 390.8 366.2 422.3 334.8L534.5 222.5C566 191 566 139.1 534.5 108.5C506.7 80.63 462.7 76.99 430.7 99.9L429.1 101C414.7 111.3 394.7 107.1 384.5 93.58C374.2 79.2 377.5 59.21 391.9 48.94L393.5 47.82C451 6.731 529.8 13.25 579.8 63.24C636.3 119.7 636.3 211.3 579.8 267.7L467.5 380z"/></svg>
 </span></span></a
+              >
+            
+          </li>
+        
+          
+          <li class="group mb-1 text-end sm:mb-0 sm:me-7 sm:last:me-0">
+            
+              <a
+                href="/archive/"
+                title=""
+                
+                ><span
+                    class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                    >Archive</span
+                  >
+                </a
               >
             
           </li>

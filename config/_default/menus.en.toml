@@ -83,6 +83,15 @@
     showName = false
     # target = "_blank"
 
+  [[footer]]
+   name = "Archive"
+   pageRef = "archive"
+   weight = 30
+  [footer.params]
+    # icon = "link"
+    showName = true
+    # target = "_blank"
+
 #[[footer]]
 # name = "instagram"
 #  url = "https://www.instagram.com/li_bo_lin/"
