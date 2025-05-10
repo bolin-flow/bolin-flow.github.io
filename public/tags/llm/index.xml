@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>LLM on  :paw_prints:</title>
+    <title>LLM on :paw_prints:  🛖  :paw_prints: </title>
     <link>http://localhost:1313/tags/llm/</link>
-    <description>Recent content in LLM on  :paw_prints:</description>
+    <description>Recent content in LLM on :paw_prints:  🛖  :paw_prints: </description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>@copyright 2024 Bolin</copyright>
@@ -15,13 +15,6 @@
       <pubDate>Fri, 03 Jan 2025 10:10:10 +0000</pubDate>
       <guid>http://localhost:1313/exploring/gen_ai_strategy/</guid>
       <description>Updated LLM workflows and agentic system content as of 2025-Feb-28</description>
-    </item>
-    <item>
-      <title>What Are We Really Measuring in a RAG Chatbot?</title>
-      <link>http://localhost:1313/developing/rag_metrics/</link>
-      <pubDate>Wed, 18 Sep 2024 20:26:26 +0000</pubDate>
-      <guid>http://localhost:1313/developing/rag_metrics/</guid>
-      <description>Updated Azure functionalities on 2024-Oct-16</description>
     </item>
     <item>
       <title>Build Own ChatGPT: A Simple How-To</title>
